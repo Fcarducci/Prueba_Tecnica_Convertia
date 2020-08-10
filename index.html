@@ -4,26 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prueba tecnica</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <div class="p-home">
         <header class="p-home__header">
-            <i class="fas fa-phone-alt"></i>
+            <i class="fas fa-phone-alt p-home__icon"></i>
             <img class="p-home__logotipo" src="assets/images/home/megacable.png" alt="Logotipo">
         </header>
         <div class="p-home__container">
-            <section class="p-home__section">
-                <p class="p-home__paragraph">INIGUALABLE</p>
-                <p class="p-home__paragraph">INCOMPARABLE</p>
-                <p class="p-home__paragraph">INCREÍBLE</p>
-                <button class="p-home__button">CONTRATA HOY</button>
-            </section>
-        
-            <section class="p-home__section">
-                <button class="p-home__button">ERES CLIENTE Y NECESITAS AYUDA</button>
-            </section>
+            <div class="row m-0">
+                <div class="p-0 col-lg-6 container-feature">
+                    <section class="p-home__contrata">
+                        <div class="p-home__paragraph-container">
+                            <p class="p-home__paragraph p-home__paragraph--one">INIGUALABLE</p>
+                            <p class="p-home__paragraph p-home__paragraph--two">INCOMPARABLE</p>
+                            <p class="p-home__paragraph p-home__paragraph--three">INCREÍBLE</p>
+                        </div>
+                        <button class="p-home__button-contrata">CONTRATA HOY</button>
+                    </section>
+                </div>
+                <div class="p-0 col-lg-6 container-feature">
+                    <section class="p-home__cliente">
+                        <button class="p-home__button-cliente">ERES CLIENTE Y NECESITAS AYUDA</button>
+                    </section>
+                </div>
+
+                
+            </div>
+
         </div>
 
     </div>

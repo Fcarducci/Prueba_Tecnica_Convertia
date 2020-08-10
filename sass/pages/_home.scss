@@ -1,0 +1,50 @@
+.p-home{
+  &__contrata{
+    background-image: url('/assets/images/home/brooke-cagle-g1Kr4Ozfoac-unsplash.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    padding:  80px 90px 18px 50px;
+  }
+
+  &__cliente{
+    background-image: url('/assets/images/home/rayul-_M6gy9oHgII-unsplash.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+  }
+
+  &__paragraph-container{
+    //margin: 100px 90px 18px 50px;
+  }
+
+  &__paragraph{
+    background-color: $colorWhite;
+    color: $colorBlue;
+    font-family: $roboto;
+    font-size: 24px;
+    text-align: left;
+    padding-left: 8px;
+    margin-bottom: 4px;
+    &--one{
+        font-weight: bold;
+        width: 180px;
+    }
+    &--two{
+        font-weight: bold;
+        width: 204px;
+    }
+    &--three{
+        font-weight: bold;
+        width: 142px;
+    }
+  }
+
+}

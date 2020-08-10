@@ -1,0 +1,24 @@
+.p-home{
+    &__button-contrata{
+      background-color: #0063BC;
+      border: 2px solid #FFFFFF;
+      border-radius: 2px;
+      color: #FFFFFF;
+      font-size: 12px;
+      margin-top: 20px;
+      opacity: 1;
+      padding: 10px 42px;
+    }
+
+    &__button-cliente{
+      background-color: #FFFFFF;
+      border: 2px solid #FF6A00;
+      border-radius: 2px;
+      color: #FF6A00;
+      font-size: 12px;
+      opacity: 1;
+      padding: 10px 42px;
+      width: 80%;
+      margin: 50% auto;
+    }
+}
