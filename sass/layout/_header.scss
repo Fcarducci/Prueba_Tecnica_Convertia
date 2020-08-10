@@ -1,7 +1,7 @@
 .p-home{
     &__header{
         display: flex;
-        justify-content: space-between;;
+        justify-content: space-between;
         align-items: center;
         padding: 16px;
     }
@@ -10,5 +10,26 @@
     }
     &__logotipo{
       width: 86px;
+    }
+
+    @media (min-width:$md){
+        &__header{
+            justify-content: center;
+            position: relative;
+            padding: 12px;
+        }
+
+        &__logotipo{
+            height: 73px;
+            width: auto;
+        }
+
+        &__icon{
+            position: absolute;
+            top: 50%;
+            left: 50px;
+            transform: translateY(-50%);
+            font-size: 28px;
+        }
     }
 }

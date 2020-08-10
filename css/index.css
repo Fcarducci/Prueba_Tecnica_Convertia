@@ -15,8 +15,25 @@
   font-size: 12px;
   opacity: 1;
   padding: 10px 42px;
-  width: 80%;
-  margin: 50% auto; }
+  width: 80%; }
+@media (min-width: 768px) {
+  .p-home__button-contrata {
+    border: 3px solid #FFFFFF;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+    width: 320px;
+    padding: 20px 0; }
+  .p-home__button-cliente {
+    border: 4px solid #FF6A00;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    width: 328px;
+    padding: 20px 28px;
+    margin-left: 114px;
+    margin-bottom: 90px; } }
 
 .p-home__header {
   display: flex;
@@ -27,10 +44,24 @@
   color: #0063BC; }
 .p-home__logotipo {
   width: 86px; }
+@media (min-width: 768px) {
+  .p-home__header {
+    justify-content: center;
+    position: relative;
+    padding: 12px; }
+  .p-home__logotipo {
+    height: 73px;
+    width: auto; }
+  .p-home__icon {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+    font-size: 28px; } }
 
 .p-home__contrata {
   background-image: url("/assets/images/home/brooke-cagle-g1Kr4Ozfoac-unsplash.png");
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -38,7 +69,7 @@
   padding: 80px 90px 18px 50px; }
 .p-home__cliente {
   background-image: url("/assets/images/home/rayul-_M6gy9oHgII-unsplash.png");
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -63,5 +94,24 @@
   .p-home__paragraph--three {
     font-weight: bold;
     width: 142px; }
+@media (min-width: 768px) {
+  .p-home__contrata {
+    background-image: url("../assets/images/home/brooke-cagle-g1Kr4Ozfoac-unsplash@2x.png");
+    height: calc(100vh - 97px); }
+  .p-home__cliente {
+    background-image: url("../assets/images/home/rayul-_M6gy9oHgII-unsplash@2x.png");
+    height: calc(100vh - 97px);
+    justify-content: left;
+    align-items: flex-end; }
+  .p-home__paragraph {
+    font-size: 60px;
+    padding-left: 8px;
+    margin-bottom: 6px; }
+    .p-home__paragraph--one {
+      width: 450px; }
+    .p-home__paragraph--two {
+      width: 510px; }
+    .p-home__paragraph--three {
+      width: 358px; } }
 
 /*# sourceMappingURL=index.css.map */

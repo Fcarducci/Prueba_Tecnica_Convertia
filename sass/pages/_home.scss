@@ -1,7 +1,7 @@
 .p-home{
   &__contrata{
     background-image: url('/assets/images/home/brooke-cagle-g1Kr4Ozfoac-unsplash.png');
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -11,7 +11,7 @@
 
   &__cliente{
     background-image: url('/assets/images/home/rayul-_M6gy9oHgII-unsplash.png');
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -47,4 +47,32 @@
     }
   }
 
+  @media (min-width:$md){
+    &__contrata{
+        background-image: url('../assets/images/home/brooke-cagle-g1Kr4Ozfoac-unsplash@2x.png');
+        height:calc(100vh - 97px);
+    }
+
+    &__cliente{
+        background-image: url('../assets/images/home/rayul-_M6gy9oHgII-unsplash@2x.png');
+        height:calc(100vh - 97px);
+        justify-content: left;
+        align-items: flex-end;;
+    }
+
+    &__paragraph{
+        font-size: 60px;
+        padding-left: 8px;
+        margin-bottom: 6px;
+        &--one{
+            width: 450px;
+        }
+        &--two{
+            width: 510px;
+        }
+        &--three{
+            width: 358px;
+        }
+    }
+  }
 }
