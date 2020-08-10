@@ -1,16 +1,19 @@
 .p-home{
+  
   &__contrata{
-    background-image: url('/assets/images/home/brooke-cagle-g1Kr4Ozfoac-unsplash.png');
+    background-image: url('../assets/images/home/brooke-cagle-g1Kr4Ozfoac-unsplash.png');
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
     width: 100%;
     height: 300px;
-    padding:  80px 90px 18px 50px;
   }
 
   &__cliente{
-    background-image: url('/assets/images/home/rayul-_M6gy9oHgII-unsplash.png');
+    background-image: url('../assets/images/home/rayul-_M6gy9oHgII-unsplash.png');
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -22,7 +25,7 @@
   }
 
   &__paragraph-container{
-    //margin: 100px 90px 18px 50px;
+    margin: auto auto 32px 50px;
   }
 
   &__paragraph{
@@ -48,17 +51,44 @@
   }
 
   @media (min-width:$md){
+
     &__contrata{
         background-image: url('../assets/images/home/brooke-cagle-g1Kr4Ozfoac-unsplash@2x.png');
         height:calc(100vh - 97px);
+        position: relative;
+        &:hover{
+            .p-home__background-blue{
+               display: none;
+            }
+        }
+    }
+
+    &__paragraph-container{
+        margin: auto auto 88px 102px;
+    }
+
+    &__background-blue{
+        background-color: rgba($color: $colorBlue, $alpha: 0.85);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
     }
 
     &__cliente{
         background-image: url('../assets/images/home/rayul-_M6gy9oHgII-unsplash@2x.png');
         height:calc(100vh - 97px);
         justify-content: left;
-        align-items: flex-end;;
+        align-items: flex-end;
+        &:hover{
+            .p-home__background-blue{
+               display: none;
+            }
+        }
     }
+
 
     &__paragraph{
         font-size: 60px;

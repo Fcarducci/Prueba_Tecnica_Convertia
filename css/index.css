@@ -24,6 +24,10 @@
     text-align: center;
     width: 320px;
     padding: 20px 0; }
+    .p-home__button-contrata:hover {
+      background-color: #FFFFFF;
+      border: 3px solid #0063BC;
+      color: #0063BC; }
   .p-home__button-cliente {
     border: 4px solid #FF6A00;
     border-radius: 4px;
@@ -33,7 +37,11 @@
     width: 328px;
     padding: 20px 28px;
     margin-left: 114px;
-    margin-bottom: 90px; } }
+    margin-bottom: 90px; }
+    .p-home__button-cliente:hover {
+      background-color: #FF6A00;
+      border: 4px solid #FFFFFF;
+      color: #FFFFFF; } }
 
 .p-home__header {
   display: flex;
@@ -60,15 +68,17 @@
     font-size: 28px; } }
 
 .p-home__contrata {
-  background-image: url("/assets/images/home/brooke-cagle-g1Kr4Ozfoac-unsplash.png");
+  background-image: url("../assets/images/home/brooke-cagle-g1Kr4Ozfoac-unsplash.png");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
   width: 100%;
-  height: 300px;
-  padding: 80px 90px 18px 50px; }
+  height: 300px; }
 .p-home__cliente {
-  background-image: url("/assets/images/home/rayul-_M6gy9oHgII-unsplash.png");
+  background-image: url("../assets/images/home/rayul-_M6gy9oHgII-unsplash.png");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -77,6 +87,8 @@
   align-items: center;
   width: 100%;
   height: 350px; }
+.p-home__paragraph-container {
+  margin: auto auto 32px 50px; }
 .p-home__paragraph {
   background-color: #FFFFFF;
   color: #0063BC;
@@ -97,12 +109,27 @@
 @media (min-width: 768px) {
   .p-home__contrata {
     background-image: url("../assets/images/home/brooke-cagle-g1Kr4Ozfoac-unsplash@2x.png");
-    height: calc(100vh - 97px); }
+    height: calc(100vh - 97px);
+    position: relative; }
+    .p-home__contrata:hover .p-home__background-blue {
+      display: none; }
+  .p-home__paragraph-container {
+    margin: auto auto 88px 102px; }
+  .p-home__background-blue {
+    background-color: rgba(0, 99, 188, 0.85);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1; }
   .p-home__cliente {
     background-image: url("../assets/images/home/rayul-_M6gy9oHgII-unsplash@2x.png");
     height: calc(100vh - 97px);
     justify-content: left;
     align-items: flex-end; }
+    .p-home__cliente:hover .p-home__background-blue {
+      display: none; }
   .p-home__paragraph {
     font-size: 60px;
     padding-left: 8px;
