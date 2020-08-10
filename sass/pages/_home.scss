@@ -50,6 +50,15 @@
     }
   }
 
+  &__modal{
+    background-color: rgba($color: #000000, $alpha: 0.9);
+  }
+
+  &__modal-content{
+    margin: 64px 42px 52px;
+    border-radius: 16px;
+  }
+
   @media (min-width:$md){
 
     &__contrata{
@@ -65,6 +74,21 @@
 
     &__paragraph-container{
         margin: auto auto 88px 102px;
+    }
+
+    &__paragraph{
+        font-size: 60px;
+        padding-left: 8px;
+        margin-bottom: 6px;
+        &--one{
+            width: 450px;
+        }
+        &--two{
+            width: 510px;
+        }
+        &--three{
+            width: 358px;
+        }
     }
 
     &__background-blue{
@@ -88,21 +112,45 @@
             }
         }
     }
-
-
-    &__paragraph{
-        font-size: 60px;
-        padding-left: 8px;
-        margin-bottom: 6px;
-        &--one{
-            width: 450px;
-        }
-        &--two{
-            width: 510px;
-        }
-        &--three{
-            width: 358px;
-        }
+    
+    &__modal-dialog{
+     max-height: 578px;
+     max-width: 578px;
+     height: 578px;
     }
+
+    &__modal-content{
+        margin: 64px 42px 52px;
+        min-width: 578px;
+        height: 578px;
+        border-radius: 50%;
+    }
+
+    &__modal-header{
+      margin-top: 138px;
+      display: flex;
+      justify-content: center;
+    }
+
+    &__modal-title{
+        color: $colorBlue;
+    }
+
+    &__close{
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    &__modal-body-paragraph{
+      text-align: center;
+    }
+
+    &__span{
+        color: $colorBlue;
+    }
+
+
   }
 }
+

@@ -49,7 +49,8 @@
   align-items: center;
   padding: 16px; }
 .p-home__icon {
-  color: #0063BC; }
+  color: #0063BC;
+  cursor: pointer; }
 .p-home__logotipo {
   width: 86px; }
 @media (min-width: 768px) {
@@ -106,6 +107,11 @@
   .p-home__paragraph--three {
     font-weight: bold;
     width: 142px; }
+.p-home__modal {
+  background-color: rgba(0, 0, 0, 0.9); }
+.p-home__modal-content {
+  margin: 64px 42px 52px;
+  border-radius: 16px; }
 @media (min-width: 768px) {
   .p-home__contrata {
     background-image: url("../assets/images/home/brooke-cagle-g1Kr4Ozfoac-unsplash@2x.png");
@@ -115,6 +121,16 @@
       display: none; }
   .p-home__paragraph-container {
     margin: auto auto 88px 102px; }
+  .p-home__paragraph {
+    font-size: 60px;
+    padding-left: 8px;
+    margin-bottom: 6px; }
+    .p-home__paragraph--one {
+      width: 450px; }
+    .p-home__paragraph--two {
+      width: 510px; }
+    .p-home__paragraph--three {
+      width: 358px; }
   .p-home__background-blue {
     background-color: rgba(0, 99, 188, 0.85);
     position: absolute;
@@ -130,15 +146,28 @@
     align-items: flex-end; }
     .p-home__cliente:hover .p-home__background-blue {
       display: none; }
-  .p-home__paragraph {
-    font-size: 60px;
-    padding-left: 8px;
-    margin-bottom: 6px; }
-    .p-home__paragraph--one {
-      width: 450px; }
-    .p-home__paragraph--two {
-      width: 510px; }
-    .p-home__paragraph--three {
-      width: 358px; } }
+  .p-home__modal-dialog {
+    max-height: 578px;
+    max-width: 578px;
+    height: 578px; }
+  .p-home__modal-content {
+    margin: 64px 42px 52px;
+    min-width: 578px;
+    height: 578px;
+    border-radius: 50%; }
+  .p-home__modal-header {
+    margin-top: 138px;
+    display: flex;
+    justify-content: center; }
+  .p-home__modal-title {
+    color: #0063BC; }
+  .p-home__close {
+    position: absolute;
+    top: 0;
+    right: 0; }
+  .p-home__modal-body-paragraph {
+    text-align: center; }
+  .p-home__span {
+    color: #0063BC; } }
 
 /*# sourceMappingURL=index.css.map */

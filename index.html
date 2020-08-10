@@ -12,7 +12,30 @@
 <body>
     <div class="p-home">
         <header class="p-home__header">
-            <i class="fas fa-phone-alt p-home__icon"></i>
+           
+            <i class="fas fa-phone-alt p-home__icon" data-toggle="modal" data-target="#callme"></i>
+            
+            <div class="modal fade p-home__modal" id="callme" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered p-home__modal-dialog">
+                  <div class="modal-content p-home__modal-content">
+                      <div class="modal-header p-home__modal-header">
+                          <h5 class="modal-title p-home__modal-title" id="exampleModalLabel">INIGUALABLE</h5>
+                          <button type="button" class="close p-home__close" data-dismiss="modal" aria-label="Close">
+                             <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+                      <div class="modal-body">
+                          <p class="p-home__modal-body-paragraph">TV INTERACTIVA + TELEFONÍA FIJA A UN PRECIO <span class="p-home__span">INCREÍBLE</span></p>
+                          <input class="p-home__modal-input-text" type="text" placeholder="Tu telefono">
+                          <div>
+                             <input class="p-home__modal-input-checkbox" type="checkbox">
+                             <label class="p-home__modal-label" for="">He leido y acepto las politicas de privacidad.</label>
+                          </div>
+                          <button class="p-home__modal-callme">Llámenme</button>
+                      </div>
+                  </div>
+                </div>
+              </div>
             <img class="p-home__logotipo" src="assets/images/home/megacable.png" alt="Logotipo">
         </header>
         <div class="p-home__container">
@@ -39,5 +62,8 @@
         </div>
 
     </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
