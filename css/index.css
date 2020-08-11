@@ -85,6 +85,23 @@
   padding-top: 4px;
   padding-bottom: 4px;
   margin-top: 12px; }
+@media (min-width: 768px) {
+  .p-contrata__button-contrata {
+    background-color: #0063BC;
+    color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 18px 78px;
+    border: none; }
+    .p-contrata__button-contrata:hover {
+      background-color: #b2ebf2;
+      color: #0063BC; }
+  .p-contrata__callme {
+    font-size: 16px;
+    border: 3px solid #FFFFFF;
+    padding-top: 12px;
+    padding-bottom: 12px; } }
 
 .p-home__header {
   display: flex;
@@ -121,9 +138,22 @@
   padding: 16px; }
 .p-contrata__ubicacion {
   width: 4%; }
+@media (min-width: 768px) {
+  .p-contrata__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px; }
+  .p-contrata__ubicacion {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+    font-size: 28px;
+    width: 2%; } }
 
 .p-contrata__jumbotron {
-  background-image: url("/assets/images/contrata/drew-graham-PVyhz0wmHdo-unsplash.png");
+  background-image: url("../assets/images/contrata/drew-graham-PVyhz0wmHdo-unsplash.png");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -136,7 +166,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 38px; }
+  padding-top: 38px;
+  text-align: left; }
 .p-contrata__tarifa-paragraph {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
@@ -153,7 +184,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 14px; }
+  border-radius: 2px; }
 .p-contrata__contact-contrata {
   background-color: #0063BC;
   border-radius: 23px 23px 0px 3px;
@@ -171,11 +202,13 @@
   justify-content: center;
   align-items: center;
   padding-top: 16px;
-  padding-bottom: 16px; }
+  padding-bottom: 16px;
+  border-radius: 3px 0px 23px 23px; }
 .p-contrata__contact-number {
   color: #0063BC;
   font-size: 12px;
   font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   width: 80%; }
 .p-contrata__contact-specification {
@@ -196,6 +229,35 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 9px;
   margin-left: 6px; }
+@media (min-width: 768px) {
+  .p-contrata__jumbotron {
+    background-image: url("../assets/images/contrata/drew-graham-PVyhz0wmHdo-unsplash@2x.png");
+    flex-direction: row;
+    justify-content: space-around;
+    height: calc(100vh - 105px); }
+  .p-contrata__tarifa-principal {
+    align-items: flex-start; }
+  .p-contrata__tarifa-paragraph {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold; }
+    .p-contrata__tarifa-paragraph--one {
+      font-size: 50px;
+      margin-bottom: 12px; }
+    .p-contrata__tarifa-paragraph--two {
+      font-size: 30px;
+      margin-bottom: 40px; }
+    .p-contrata__tarifa-paragraph--three {
+      font-size: 30px;
+      margin-bottom: 94px; }
+  .p-contrata__contact-contrata {
+    font-size: 16px;
+    padding: 28px 90px; }
+  .p-contrata__contact-container {
+    width: 100%; }
+  .p-contrata__contact-number {
+    font-size: 14px; }
+  .p-contrata__modal-label {
+    font-size: 10px; } }
 
 .p-home__contrata {
   background-image: url("../assets/images/home/brooke-cagle-g1Kr4Ozfoac-unsplash.png");

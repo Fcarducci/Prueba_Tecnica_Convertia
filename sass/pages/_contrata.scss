@@ -1,6 +1,6 @@
 .p-contrata{
   &__jumbotron{
-    background-image: url('/assets/images/contrata/drew-graham-PVyhz0wmHdo-unsplash.png');
+    background-image: url('../assets/images/contrata/drew-graham-PVyhz0wmHdo-unsplash.png');
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,6 +16,7 @@
     justify-content: center;
     align-items: center;
     padding-top: 38px;
+    text-align: left;
   }
 
   &__tarifa-paragraph{
@@ -42,7 +43,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 14px;
+    border-radius: 2px;
 
   }
 
@@ -66,12 +67,14 @@
     align-items: center;
     padding-top: 16px;
     padding-bottom: 16px;
+    border-radius: 3px 0px 23px 23px;
   }
 
   &__contact-number{
     color: $colorBlue;
     font-size: 12px;
     font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     width: 80%;
   }
@@ -101,5 +104,59 @@
     font-size: 9px;
     margin-left: 6px;
   }
+
+    // MEDIA QUERYS PARA DISENO CON PANTALLAS CON UN MINIMO DE 768PX DE ANCHO (ORDENADORES):
+
+    @media (min-width:$md){
+        &__jumbotron{
+            background-image: url('../assets/images/contrata/drew-graham-PVyhz0wmHdo-unsplash@2x.png');
+            flex-direction: row;
+            justify-content: space-around;
+            height:calc(100vh - 105px);
+        }
+
+        &__tarifa-principal{
+            align-items: flex-start;
+        }
+
+        &__tarifa-paragraph{
+            font-family: $roboto;
+            font-weight: bold;
+            
+            
+            &--one{
+              font-size: 50px;
+              margin-bottom: 12px;
+            }
+        
+            &--two{
+              font-size: 30px;
+              margin-bottom: 40px;
+            }
+        
+            &--three{
+              font-size: 30px;
+              margin-bottom: 94px;
+            }
+        }
+
+        &__contact-contrata{
+            font-size: 16px;
+            padding: 28px 90px;
+            
+        }
+
+        &__contact-container{
+         width: 100%;
+        }
+
+        &__contact-number{
+            font-size: 14px;
+        }
+
+        &__modal-label{
+          font-size: 10px;
+        }
+    }
 
 }

@@ -106,4 +106,27 @@
    padding-bottom: 4px;
    margin-top: 12px;
   }
+
+  @media (min-width:$md){
+    &__button-contrata{
+      background-color: $colorBlue;
+      color:$colorWhite;
+      font-family: $roboto;
+      font-weight: bold;
+      font-size: 16px;
+      padding: 18px 78px;
+      border: none;
+      &:hover{
+        background-color: #b2ebf2;
+        color: $colorBlue;
+      }
+    }
+
+    &__callme{
+      font-size: 16px;
+      border: 3px solid $colorWhite;
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+  }
 }
