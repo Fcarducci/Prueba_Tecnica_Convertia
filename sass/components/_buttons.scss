@@ -81,3 +81,29 @@
         }
     }
 }
+
+.p-contrata{
+
+  &__button-contrata{
+    background-color: $colorBlue;
+    color:$colorWhite;
+    font-family: $roboto;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 10px 42px;
+    border: none;
+  }
+
+  &__callme{
+   background-color: $colorOrange;
+   font-family: $roboto;
+   font-weight: bold;
+   font-size: 12px;
+   width: 80%;
+   color: $colorWhite;
+   border: none;
+   padding-top: 4px;
+   padding-bottom: 4px;
+   margin-top: 12px;
+  }
+}

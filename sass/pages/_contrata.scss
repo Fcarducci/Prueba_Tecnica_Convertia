@@ -1,0 +1,105 @@
+.p-contrata{
+  &__jumbotron{
+    background-image: url('/assets/images/contrata/drew-graham-PVyhz0wmHdo-unsplash.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__tarifa-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 38px;
+  }
+
+  &__tarifa-paragraph{
+    font-family: $roboto;
+    font-weight: bold;
+    margin-bottom: 8px;
+    
+    &--one{
+      font-size: 25px;
+    }
+
+    &--two{
+      font-size: 15px;
+    }
+
+    &--three{
+      font-size: 15px;
+    }
+  }
+
+  &__contact{
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 14px;
+
+  }
+
+  &__contact-contrata{
+    background-color: $colorBlue;
+    border-radius: 23px 23px 0px 3px;
+    color: $colorWhite;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    padding: 12px 42px;
+    margin-bottom: 0;
+  }
+
+  &__contact-container{
+    background-color: $colorWhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  &__contact-number{
+    color: $colorBlue;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    width: 80%;
+  }
+
+  &__contact-specification{
+      color: #000000;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 10px;
+      text-align: center;
+  }
+
+  &__input-text{
+      width: 80%;
+      margin-bottom: 12px;
+      font-size: 12px;
+  }
+
+  &__modal-terms{
+    width: 80%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__modal-label{
+    color: #BFB8AE;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    margin-left: 6px;
+  }
+
+}
