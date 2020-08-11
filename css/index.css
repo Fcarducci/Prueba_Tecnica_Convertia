@@ -152,7 +152,8 @@
     right: 50px;
     transform: translateY(-50%);
     font-size: 28px;
-    width: 2%; } }
+    width: 2%;
+    cursor: pointer; } }
 
 .p-contrata__jumbotron {
   background-image: url("../assets/images/contrata/drew-graham-PVyhz0wmHdo-unsplash.png");
