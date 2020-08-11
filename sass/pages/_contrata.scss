@@ -106,7 +106,7 @@
   }
 
   &__packages{
-    background-image: url('/assets/images/contrata/nordwood-themes-bJjsKbToY34-unsplash-1.png');
+    background-image: url('../assets/images/contrata/nordwood-themes-bJjsKbToY34-unsplash-1.png');
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -114,6 +114,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    &--img2{
+        background-image: url('../assets/images/contrata/nordwood-themes-bJjsKbToY34-unsplash.png');
+    }
   }
 
   &__packages-button{
@@ -218,11 +221,16 @@
         }
 
         &__packages{
-            background-image: url('/assets/images/contrata/nordwood-themes-bJjsKbToY34-unsplash-1@2x.png');
+            background-image: url('../assets/images/contrata/nordwood-themes-bJjsKbToY34-unsplash-1@2x.png');
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
             align-items: center;
+            margin-top: 68px;
+            &--img2{
+                background-image: url('/assets/images/contrata/nordwood-themes-bJjsKbToY34-unsplash@2x.png');
+                margin-top: 42px;
+            }
         }
 
         //tarifas
