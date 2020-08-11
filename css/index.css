@@ -101,7 +101,9 @@
     font-size: 16px;
     border: 3px solid #FFFFFF;
     padding-top: 12px;
-    padding-bottom: 12px; } }
+    padding-bottom: 12px; }
+  .p-contrata__button-container-tarifa {
+    margin-top: 0; } }
 
 .p-home__header {
   display: flex;
@@ -230,7 +232,7 @@
   font-size: 9px;
   margin-left: 6px; }
 .p-contrata__packages {
-  background-image: url("../assets/images/contrata/nordwood-themes-bJjsKbToY34-unsplash.png");
+  background-image: url("/assets/images/contrata/nordwood-themes-bJjsKbToY34-unsplash-1.png");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -301,11 +303,29 @@
   .p-contrata__modal-label {
     font-size: 10px; }
   .p-contrata__packages {
-    background-image: url("/assets/images/contrata/nordwood-themes-bJjsKbToY34-unsplash@2x.png");
+    background-image: url("/assets/images/contrata/nordwood-themes-bJjsKbToY34-unsplash-1@2x.png");
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center; } }
+    align-items: center; }
+  .p-contrata__tarifas {
+    margin-top: 68px; }
+  .p-contrata__tarifas-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+    box-shadow: 0px 0px 12px #00000029;
+    margin: 30px 0;
+    width: 80%; }
+  .p-contrata__producto {
+    width: 42%; }
+  .p-contrata__tarifas-img {
+    width: 30%;
+    margin: 0; }
+  .p-contrata__tarifas-paragraph {
+    font-size: 18px;
+    width: 100%; } }
 
 .p-home__contrata {
   background-image: url("../assets/images/home/brooke-cagle-g1Kr4Ozfoac-unsplash.png");
