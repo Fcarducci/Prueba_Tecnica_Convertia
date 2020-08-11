@@ -140,7 +140,6 @@
     margin: auto auto 88px 102px; }
   .p-home__paragraph {
     font-size: 60px;
-    padding-left: 8px;
     margin-bottom: 6px; }
     .p-home__paragraph--one {
       width: 450px; }
@@ -196,7 +195,7 @@
     align-items: center; }
     .p-home__close:hover .p-home__X {
       color: black;
-      transform: scale(2); }
+      transform: scale(2) translate(1%, -10%); }
   .p-home__X {
     color: #aaaa; }
   .p-home__modal-body {

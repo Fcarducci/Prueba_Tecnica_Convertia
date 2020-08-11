@@ -79,7 +79,6 @@
 
     &__paragraph{
         font-size: 60px;
-        padding-left: 8px;
         margin-bottom: 6px;
         &--one{
             width: 450px;
@@ -114,10 +113,6 @@
         }
     }
 
-    &__modal{
-
-    }
-    
     &__modal-dialog{
      max-height: 578px;
      max-width: 578px;
@@ -150,8 +145,6 @@
       position: fixed;
       top: 10%;
       right:5%;
-      //transform: translateX(-50%);
-      //transform: translateY(-50%);
       width: 41px;
       height: 41px;
       border-radius: 50%;
@@ -162,7 +155,7 @@
       &:hover{
         .p-home__X{
           color: black;
-          transform: scale(2);
+          transform: scale(2) translate(1%, -10%);
         }
       }
     }
