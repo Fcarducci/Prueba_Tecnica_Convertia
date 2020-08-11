@@ -25,6 +25,19 @@
       width: 80%;
     }
 
+    &__modal-callme{
+      background-color: $colorOrange;
+      border: none;
+      color: $colorWhite;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      margin: 28px auto;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      width: 160px;
+    }
+
     @media (min-width:$md){
       &__button-contrata{
         border: 3px solid $colorWhite;
@@ -57,12 +70,6 @@
         }
 
         &__modal-callme{
-          background-color: $colorOrange;
-          border: none;
-          color: $colorWhite;
-          font-family: Arial, Helvetica, sans-serif;
-          font-size: 14px;
-          font-weight: bold;
           margin: 28px auto auto auto;
           padding-top: 10px;
           padding-bottom: 10px;

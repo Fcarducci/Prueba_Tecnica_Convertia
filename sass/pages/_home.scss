@@ -1,5 +1,8 @@
 .p-home{
   
+  // DISENO WEB MOVIL (MOBILE FIRST) DE LA HOME PAGE:
+
+  // SECCION DE CONTRATA:
   &__contrata{
     background-image: url('../assets/images/home/brooke-cagle-g1Kr4Ozfoac-unsplash.png');
     background-position: top;
@@ -12,6 +15,7 @@
     height: 300px;
   }
 
+  // SECCION DE CLIENTES:
   &__cliente{
     background-image: url('../assets/images/home/rayul-_M6gy9oHgII-unsplash.png');
     background-position: top;
@@ -23,11 +27,13 @@
     width: 100%;
     height: 350px;
   }
-
+  
+  // CONTENEDOR DE PARRAFOS DE LA SECCION DE CONTRATA:
   &__paragraph-container{
     margin: auto auto 32px 50px;
   }
 
+  // PARRAFO GENERICO:
   &__paragraph{
     background-color: $colorWhite;
     color: $colorBlue;
@@ -36,31 +42,140 @@
     text-align: left;
     padding-left: 8px;
     margin-bottom: 4px;
+
+    // MODIFICADOR DEL PRIMER PARRAFO
     &--one{
       font-weight: bold;
       width: 180px;
     }
+
+    // MODIFICADOR DEL SEGUNDO PARRAFO
     &--two{
       font-weight: bold;
       width: 204px;
     }
+
+    // MODIFICADOR DEL TERCER PARRAFO
     &--three{
       font-weight: bold;
       width: 142px;
     }
   }
 
+
+  //MODAL DE 'LLAMAME':
+
+
+  // CONTENEDOR MODAL PADRE:
   &__modal{
     background-color: rgba($color: #000000, $alpha: 0.9);
   }
-
+  
+  // CONTENEDOR MODAL DIALOGO:
+  &__modal-dialog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  //CONTENEDOR MODAL CONTENIDO:
   &__modal-content{
     margin: 64px 42px 52px;
     border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
   }
+
+  // CABECERA DEL MODAL:
+   &__modal-header{
+     border-bottom: none;
+     margin-top: 28px;
+   }
+
+   // TITULO DEL MODAL:
+   &__modal-title{
+     color: $colorBlue;
+     font-size: 16px;
+     font-family: $roboto;
+     font-weight: bold;
+   }
+
+   // BOTON PARA CERRAR EL MODAL:
+   &__close{
+     position: fixed;
+     top: 20%;
+     right:15%;
+     width: 41px;
+     height: 41px;
+     border-radius: 50%;
+     background-color: $colorWhite !important;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+
+   //ETIQUETA SPAN, HIJO DEL BOTON CERRAR, QUE CONTIENE LA X:
+   &__X{
+    color: #aaaa;
+   }
+
+   // CUERPO DEL MODAL:
+   &__modal-body{
+     text-align: center;
+     flex: none;
+   }
+
+   // PARRAFO DEL CUERPO DEL MODAL:
+   &__modal-body-paragraph{
+     text-align: center;
+     font-size: 12px;
+     font-family: $roboto;
+     font-weight: bold;
+     width: 100%;
+     margin: 16px auto 12px;
+   }
+
+   // ETIQUETA SPAN DEL PARRAFO:
+   &__span{
+     color: $colorBlue;
+   }
+
+   // INPUT TIPO TEXTO DEL MODAL:
+   &__modal-input-text{
+     border: 2px solid #777777;
+     margin: 20px auto auto auto;
+     opacity: 1;
+     padding: 4px 3px;
+     font-size: 12px;
+     width: 160px;
+   }
+
+   // CONTENEDOR DE POLITICA DE PRIVACIDAD:
+   &__modal-terms{
+     margin: 12px auto 0 auto;
+     width: 160px;
+     text-align: left;
+     display: flex;
+     align-items: center;
+   }
+
+   // ETIQUETA LABEL DEL MODAL:
+   &__modal-label{
+     font-size: 10px;
+     opacity: 0.5;
+     margin-left: 4px;
+     margin-bottom: 0;
+   }
+
+
+  // MEDIA QUERYS PARA DISENO CON PANTALLAS CON UN MINIMO DE 768PX DE ANCHO (ORDENADORES):
 
   @media (min-width:$md){
 
+    // SECCION DE CONTRATA:
     &__contrata{
         background-image: url('../assets/images/home/brooke-cagle-g1Kr4Ozfoac-unsplash@2x.png');
         height:calc(100vh - 97px);
@@ -72,11 +187,13 @@
         }
     }
 
+    // CONTENEDOR DE PARRAFOS DE LA SECCION DE CONTRATA:
     &__paragraph-container{
         margin: auto auto 88px 102px;
 
     }
 
+    // PARRAFO GENERICO:
     &__paragraph{
         font-size: 60px;
         margin-bottom: 6px;
@@ -90,7 +207,8 @@
             width: 358px;
         }
     }
-
+    
+    //CONTENEDOR PARA COLOCAR LAS SECCION CON UN FONDO AZUL:
     &__background-blue{
         background-color: rgba($color: $colorBlue, $alpha: 0.85);
         position: absolute;
@@ -101,6 +219,7 @@
         z-index: 1;
     }
 
+    // SECCION DE CLIENTES:
     &__cliente{
         background-image: url('../assets/images/home/rayul-_M6gy9oHgII-unsplash@2x.png');
         height:calc(100vh - 97px);
@@ -113,34 +232,37 @@
         }
     }
 
+    //MODAL DE 'LLAMAME':
+
+    // CONTENEDOR MODAL DIALOGO:
     &__modal-dialog{
      max-height: 578px;
      max-width: 578px;
      height: 578px;
     }
 
+
+    //CONTENEDOR MODAL CONTENIDO:
     &__modal-content{
-        margin: 64px 42px 52px;
+        
         min-width: 578px;
         height: 578px;
         border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+
     }
 
+
+    // CABECERA DEL MODAL:
     &__modal-header{
       border-bottom: none;
-    }
-
+    } 
+    
+    // TITULO DEL MODAL:
     &__modal-title{
-      color: $colorBlue;
       font-size: 41px;
-      font-family: $roboto;
-      font-weight: bold;
     }
 
+    // BOTON PARA CERRAR EL MODAL:
     &__close{
       position: fixed;
       top: 10%;
@@ -160,15 +282,14 @@
       }
     }
 
-    &__X{
-     color: #aaaa;
-    }
 
+    // CUERPO DEL MODAL:
     &__modal-body{
       text-align: center;
       flex: none;
     }
 
+    // PARRAFO DEL CUERPO DEL MODAL:
     &__modal-body-paragraph{
       text-align: center;
       font-size: 24px;
@@ -179,33 +300,27 @@
       padding: 0 24px;
     }
 
+    // ETIQUETA SPAN DEL PARRAFO:
     &__span{
       color: $colorBlue;
     }
 
+    // INPUT TIPO TEXTO DEL MODAL:
     &__modal-input-text{
       border: 3px solid #777777;
-      margin: 20px auto auto auto;
-      opacity: 1;
       padding: 8px 6px;
       width: 320px;
     }
 
+    // CONTENEDOR DE POLITICA DE PRIVACIDAD:
     &__modal-terms{
-      margin: 12px auto 0 auto;
       width: 320px;
-      text-align: left;
-      display: flex;
-      align-items: center;
     }
 
+    // ETIQUETA LABEL DEL MODAL:
     &__modal-label{
       font-size: 12px;
-      opacity: 0.5;
-      margin-left: 4px;
-      margin-bottom: 0;
     }
-
   }
 }
 

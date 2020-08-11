@@ -20,6 +20,17 @@
   opacity: 1;
   padding: 10px 42px;
   width: 80%; }
+.p-home__modal-callme {
+  background-color: #FF6A00;
+  border: none;
+  color: #FFFFFF;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 28px auto;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  width: 160px; }
 @media (min-width: 768px) {
   .p-home__button-contrata {
     border: 3px solid #FFFFFF;
@@ -46,12 +57,6 @@
       border: 4px solid #FFFFFF;
       color: #FFFFFF; }
   .p-home__modal-callme {
-    background-color: #FF6A00;
-    border: none;
-    color: #FFFFFF;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    font-weight: bold;
     margin: 28px auto auto auto;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -126,9 +131,69 @@
     width: 142px; }
 .p-home__modal {
   background-color: rgba(0, 0, 0, 0.9); }
+.p-home__modal-dialog {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 .p-home__modal-content {
   margin: 64px 42px 52px;
-  border-radius: 16px; }
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%; }
+.p-home__modal-header {
+  border-bottom: none;
+  margin-top: 28px; }
+.p-home__modal-title {
+  color: #0063BC;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold; }
+.p-home__close {
+  position: fixed;
+  top: 20%;
+  right: 15%;
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  background-color: #FFFFFF !important;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+.p-home__X {
+  color: #aaaa; }
+.p-home__modal-body {
+  text-align: center;
+  flex: none; }
+.p-home__modal-body-paragraph {
+  text-align: center;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  width: 100%;
+  margin: 16px auto 12px; }
+.p-home__span {
+  color: #0063BC; }
+.p-home__modal-input-text {
+  border: 2px solid #777777;
+  margin: 20px auto auto auto;
+  opacity: 1;
+  padding: 4px 3px;
+  font-size: 12px;
+  width: 160px; }
+.p-home__modal-terms {
+  margin: 12px auto 0 auto;
+  width: 160px;
+  text-align: left;
+  display: flex;
+  align-items: center; }
+.p-home__modal-label {
+  font-size: 10px;
+  opacity: 0.5;
+  margin-left: 4px;
+  margin-bottom: 0; }
 @media (min-width: 768px) {
   .p-home__contrata {
     background-image: url("../assets/images/home/brooke-cagle-g1Kr4Ozfoac-unsplash@2x.png");
@@ -167,21 +232,13 @@
     max-width: 578px;
     height: 578px; }
   .p-home__modal-content {
-    margin: 64px 42px 52px;
     min-width: 578px;
     height: 578px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; }
+    border-radius: 50%; }
   .p-home__modal-header {
     border-bottom: none; }
   .p-home__modal-title {
-    color: #0063BC;
-    font-size: 41px;
-    font-family: "Roboto", sans-serif;
-    font-weight: bold; }
+    font-size: 41px; }
   .p-home__close {
     position: fixed;
     top: 10%;
@@ -196,8 +253,6 @@
     .p-home__close:hover .p-home__X {
       color: black;
       transform: scale(2) translate(1%, -10%); }
-  .p-home__X {
-    color: #aaaa; }
   .p-home__modal-body {
     text-align: center;
     flex: none; }
@@ -213,20 +268,11 @@
     color: #0063BC; }
   .p-home__modal-input-text {
     border: 3px solid #777777;
-    margin: 20px auto auto auto;
-    opacity: 1;
     padding: 8px 6px;
     width: 320px; }
   .p-home__modal-terms {
-    margin: 12px auto 0 auto;
-    width: 320px;
-    text-align: left;
-    display: flex;
-    align-items: center; }
+    width: 320px; }
   .p-home__modal-label {
-    font-size: 12px;
-    opacity: 0.5;
-    margin-left: 4px;
-    margin-bottom: 0; } }
+    font-size: 12px; } }
 
 /*# sourceMappingURL=index.css.map */
