@@ -52,7 +52,7 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     font-weight: bold;
-    margin: 60px 126px auto 132px;
+    margin: 28px auto auto auto;
     padding-top: 10px;
     padding-bottom: 10px;
     width: 320px; } }
@@ -164,7 +164,6 @@
     .p-home__cliente:hover .p-home__background-blue {
       display: none; }
   .p-home__modal-dialog {
-    position: relative;
     max-height: 578px;
     max-width: 578px;
     height: 578px; }
@@ -172,12 +171,12 @@
     margin: 64px 42px 52px;
     min-width: 578px;
     height: 578px;
-    border-radius: 50%; }
-  .p-home__modal-header {
-    margin-top: 138px;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column; }
+  .p-home__modal-header {
     border-bottom: none; }
   .p-home__modal-title {
     color: #0063BC;
@@ -185,14 +184,11 @@
     font-family: "Roboto", sans-serif;
     font-weight: bold; }
   .p-home__close {
-    position: absolute;
-    top: 0;
-    right: -50%;
-    transform: translateX(50%);
-    max-width: 14px;
-    max-height: 14px;
-    width: 14px;
-    height: 14px;
+    position: fixed;
+    top: 10%;
+    right: 5%;
+    width: 41px;
+    height: 41px;
     border-radius: 50%;
     background-color: #FFFFFF !important;
     display: flex;
@@ -203,26 +199,35 @@
       transform: scale(2); }
   .p-home__X {
     color: #aaaa; }
+  .p-home__modal-body {
+    text-align: center;
+    flex: none; }
   .p-home__modal-body-paragraph {
     text-align: center;
     font-size: 24px;
     font-family: "Roboto", sans-serif;
     font-weight: bold;
     width: 95%;
-    margin: auto;
+    margin: 42px auto 12px;
     padding: 0 24px; }
   .p-home__span {
     color: #0063BC; }
   .p-home__modal-input-text {
     border: 3px solid #777777;
-    margin: 28px 126px auto 132px;
+    margin: 20px auto auto auto;
     opacity: 1;
     padding: 8px 6px;
     width: 320px; }
   .p-home__modal-terms {
-    margin: 12px 126px 0 132px; }
+    margin: 12px auto 0 auto;
+    width: 320px;
+    text-align: left;
+    display: flex;
+    align-items: center; }
   .p-home__modal-label {
     font-size: 12px;
-    opacity: 0.5; } }
+    opacity: 0.5;
+    margin-left: 4px;
+    margin-bottom: 0; } }
 
 /*# sourceMappingURL=index.css.map */
