@@ -3,6 +3,8 @@
   border: 2px solid #FFFFFF;
   border-radius: 2px;
   color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
   font-size: 12px;
   margin-top: 20px;
   opacity: 1;
@@ -12,6 +14,8 @@
   border: 2px solid #FF6A00;
   border-radius: 2px;
   color: #FF6A00;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
   font-size: 12px;
   opacity: 1;
   padding: 10px 42px;
@@ -33,15 +37,25 @@
     border-radius: 4px;
     font-size: 16px;
     line-height: 20px;
-    text-align: center;
-    width: 328px;
+    width: 400px;
     padding: 20px 28px;
     margin-left: 114px;
     margin-bottom: 90px; }
     .p-home__button-cliente:hover {
       background-color: #FF6A00;
       border: 4px solid #FFFFFF;
-      color: #FFFFFF; } }
+      color: #FFFFFF; }
+  .p-home__modal-callme {
+    background-color: #FF6A00;
+    border: none;
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 60px 126px auto 132px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 320px; } }
 
 .p-home__header {
   display: flex;
@@ -50,7 +64,10 @@
   padding: 16px; }
 .p-home__icon {
   color: #0063BC;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: transform .3s ease-in-out; }
+  .p-home__icon:hover {
+    transform: scale3d(1.175, 1.1, 1.1); }
 .p-home__logotipo {
   width: 86px; }
 @media (min-width: 768px) {
@@ -147,6 +164,7 @@
     .p-home__cliente:hover .p-home__background-blue {
       display: none; }
   .p-home__modal-dialog {
+    position: relative;
     max-height: 578px;
     max-width: 578px;
     height: 578px; }
@@ -158,16 +176,53 @@
   .p-home__modal-header {
     margin-top: 138px;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    align-items: center;
+    border-bottom: none; }
   .p-home__modal-title {
-    color: #0063BC; }
+    color: #0063BC;
+    font-size: 41px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold; }
   .p-home__close {
     position: absolute;
     top: 0;
-    right: 0; }
+    right: -50%;
+    transform: translateX(50%);
+    max-width: 14px;
+    max-height: 14px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #FFFFFF !important;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .p-home__close:hover .p-home__X {
+      color: black;
+      transform: scale(2); }
+  .p-home__X {
+    color: #aaaa; }
   .p-home__modal-body-paragraph {
-    text-align: center; }
+    text-align: center;
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    width: 95%;
+    margin: auto;
+    padding: 0 24px; }
   .p-home__span {
-    color: #0063BC; } }
+    color: #0063BC; }
+  .p-home__modal-input-text {
+    border: 3px solid #777777;
+    margin: 28px 126px auto 132px;
+    opacity: 1;
+    padding: 8px 6px;
+    width: 320px; }
+  .p-home__modal-terms {
+    margin: 12px 126px 0 132px; }
+  .p-home__modal-label {
+    font-size: 12px;
+    opacity: 0.5; } }
 
 /*# sourceMappingURL=index.css.map */

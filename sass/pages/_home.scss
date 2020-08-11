@@ -37,16 +37,16 @@
     padding-left: 8px;
     margin-bottom: 4px;
     &--one{
-        font-weight: bold;
-        width: 180px;
+      font-weight: bold;
+      width: 180px;
     }
     &--two{
-        font-weight: bold;
-        width: 204px;
+      font-weight: bold;
+      width: 204px;
     }
     &--three{
-        font-weight: bold;
-        width: 142px;
+      font-weight: bold;
+      width: 142px;
     }
   }
 
@@ -74,6 +74,7 @@
 
     &__paragraph-container{
         margin: auto auto 88px 102px;
+
     }
 
     &__paragraph{
@@ -114,6 +115,7 @@
     }
     
     &__modal-dialog{
+     position: relative;
      max-height: 578px;
      max-width: 578px;
      height: 578px;
@@ -130,26 +132,73 @@
       margin-top: 138px;
       display: flex;
       justify-content: center;
+      align-items: center;
+      border-bottom: none;
     }
 
     &__modal-title{
-        color: $colorBlue;
+      color: $colorBlue;
+      font-size: 41px;
+      font-family: $roboto;
+      font-weight: bold;
     }
 
     &__close{
       position: absolute;
       top: 0;
-      right: 0;
+      right: -50%;
+      transform: translateX(50%);
+      max-width: 14px;
+      max-height: 14px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background-color: $colorWhite !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:hover{
+        .p-home__X{
+          color: black;
+          transform: scale(2);
+        }
+      }
+    }
+
+    &__X{
+     color: #aaaa;
     }
 
     &__modal-body-paragraph{
       text-align: center;
+      font-size: 24px;
+      font-family: $roboto;
+      font-weight: bold;
+      width: 95%;
+      margin: auto;
+      padding: 0 24px;
     }
 
     &__span{
-        color: $colorBlue;
+      color: $colorBlue;
     }
 
+    &__modal-input-text{
+      border: 3px solid #777777;
+      margin: 28px 126px auto 132px;
+      opacity: 1;
+      padding: 8px 6px;
+      width: 320px;
+    }
+
+    &__modal-terms{
+      margin: 12px 126px 0 132px;
+    }
+
+    &__modal-label{
+      font-size: 12px;
+      opacity: 0.5;
+    }
 
   }
 }

@@ -8,6 +8,10 @@
     &__icon{
         color: $colorBlue;
         cursor: pointer;
+        transition: transform .3s ease-in-out;
+        &:hover{
+            transform: scale3d(1.175,1.1,1.1);
+        }
     }
     &__logotipo{
       width: 86px;
