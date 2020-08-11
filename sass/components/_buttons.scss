@@ -10,6 +10,7 @@
       margin-top: 20px;
       opacity: 1;
       padding: 10px 42px;
+      text-decoration: none;
     }
 
     &__button-cliente{
@@ -23,6 +24,7 @@
       opacity: 1;
       padding: 10px 42px;
       width: 80%;
+      text-decoration: none;
     }
 
     &__modal-callme{
@@ -49,7 +51,8 @@
         &:hover{
           background-color: $colorWhite;
           border: 3px solid $colorBlue;
-          color: $colorBlue
+          color: $colorBlue;
+          text-decoration: none;
         }
       }
 
@@ -65,7 +68,8 @@
           &:hover{
             background-color: $colorOrange;
             border: 4px solid $colorWhite;
-            color: $colorWhite
+            color: $colorWhite;
+            text-decoration: none;
           }
         }
 

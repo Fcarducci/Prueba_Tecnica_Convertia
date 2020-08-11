@@ -8,7 +8,8 @@
   font-size: 12px;
   margin-top: 20px;
   opacity: 1;
-  padding: 10px 42px; }
+  padding: 10px 42px;
+  text-decoration: none; }
 .p-home__button-cliente {
   background-color: #FFFFFF;
   border: 2px solid #FF6A00;
@@ -19,7 +20,8 @@
   font-size: 12px;
   opacity: 1;
   padding: 10px 42px;
-  width: 80%; }
+  width: 80%;
+  text-decoration: none; }
 .p-home__modal-callme {
   background-color: #FF6A00;
   border: none;
@@ -42,7 +44,8 @@
     .p-home__button-contrata:hover {
       background-color: #FFFFFF;
       border: 3px solid #0063BC;
-      color: #0063BC; }
+      color: #0063BC;
+      text-decoration: none; }
   .p-home__button-cliente {
     border: 4px solid #FF6A00;
     border-radius: 4px;
@@ -55,7 +58,8 @@
     .p-home__button-cliente:hover {
       background-color: #FF6A00;
       border: 4px solid #FFFFFF;
-      color: #FFFFFF; }
+      color: #FFFFFF;
+      text-decoration: none; }
   .p-home__modal-callme {
     margin: 28px auto auto auto;
     padding-top: 10px;
