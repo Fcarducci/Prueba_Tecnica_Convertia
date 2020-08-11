@@ -38,3 +38,18 @@
         }
     }
 }
+
+.p-contrata{
+    
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px;
+    }
+
+    &__ubicacion{
+        width: 4%;
+    }
+    
+}

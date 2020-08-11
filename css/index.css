@@ -94,6 +94,14 @@
     transform: translateY(-50%);
     font-size: 28px; } }
 
+.p-contrata__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px; }
+.p-contrata__ubicacion {
+  width: 4%; }
+
 .p-home__contrata {
   background-image: url("../assets/images/home/brooke-cagle-g1Kr4Ozfoac-unsplash.png");
   background-position: top;
