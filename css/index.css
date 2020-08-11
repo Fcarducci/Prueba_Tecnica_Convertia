@@ -229,6 +229,48 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 9px;
   margin-left: 6px; }
+.p-contrata__packages {
+  background-image: url("../assets/images/contrata/nordwood-themes-bJjsKbToY34-unsplash.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+.p-contrata__packages-button {
+  margin-bottom: 20px; }
+.p-contrata__tarifas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+.p-contrata__tarifas-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  box-shadow: 0px 0px 12px #00000029;
+  margin: 12px 24px; }
+.p-contrata__producto {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .p-contrata__producto--vip {
+    justify-content: space-between; }
+.p-contrata__tarifas-img {
+  width: 20%;
+  margin: 0 12px; }
+.p-contrata__tarifas-paragraph {
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  margin-left: 24px;
+  margin-bottom: 0;
+  text-align: center; }
+  .p-contrata__tarifas-paragraph--vip {
+    margin-left: 0; }
 @media (min-width: 768px) {
   .p-contrata__jumbotron {
     background-image: url("../assets/images/contrata/drew-graham-PVyhz0wmHdo-unsplash@2x.png");
@@ -257,7 +299,13 @@
   .p-contrata__contact-number {
     font-size: 14px; }
   .p-contrata__modal-label {
-    font-size: 10px; } }
+    font-size: 10px; }
+  .p-contrata__packages {
+    background-image: url("/assets/images/contrata/nordwood-themes-bJjsKbToY34-unsplash@2x.png");
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; } }
 
 .p-home__contrata {
   background-image: url("../assets/images/home/brooke-cagle-g1Kr4Ozfoac-unsplash.png");
