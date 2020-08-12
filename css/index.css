@@ -886,4 +886,7 @@
   .p-home__modal-label {
     font-size: 12px; } }
 
+* button:focus {
+  outline: none; }
+
 /*# sourceMappingURL=index.css.map */

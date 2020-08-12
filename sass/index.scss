@@ -12,3 +12,9 @@
 @import 'pages/atc';
 @import 'pages/contrata';
 @import 'pages/home';
+
+*{
+    button:focus{
+        outline: none;
+    }
+}
