@@ -120,7 +120,7 @@
   }
 
   &__packages-button{
-      margin-bottom: 20px;
+    margin-bottom: 20px;
   }
 
   &__tarifas{
@@ -138,6 +138,7 @@
     padding: 12px 24px;
     box-shadow: 0px 0px 12px #00000029;
     margin: 12px 24px;
+    position: relative;
   }
 
   &__producto{
@@ -164,6 +165,40 @@
 
     &--vip{
         margin-left: 0;
+    }
+  }
+
+  &__tarifas-dropdown-body{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__tarifas-dropdown-p{
+    font-family: $roboto;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+    & span{
+      color: #434343;
+      font-weight: lighter;
+      display:block
+    }
+  }
+
+  &__tarifas-dropdown-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__tarifas-dropdown-img{
+    width: 20%;
+    &--wifi{
+      width: 30%;
     }
   }
 
@@ -232,6 +267,9 @@
     font-size: 12px;
     width: 60%;
     margin-bottom: 12px;
+    background-color: lightgray;
+    border: none;
+    padding: 6px 8px;
   }
 
   &__footer-contact-terms{
@@ -254,99 +292,218 @@
     // MEDIA QUERYS PARA DISENO CON PANTALLAS CON UN MINIMO DE 768PX DE ANCHO (ORDENADORES):
 
     @media (min-width:$md){
-        &__jumbotron{
-            background-image: url('../assets/images/contrata/drew-graham-PVyhz0wmHdo-unsplash@2x.png');
-            flex-direction: row;
-            justify-content: space-around;
-            height:calc(100vh - 105px);
-        }
+      &__jumbotron{
+        background-image: url('../assets/images/contrata/drew-graham-PVyhz0wmHdo-unsplash@2x.png');
+        flex-direction: row;
+        justify-content: space-around;
+        height:calc(100vh - 105px);
+      }
 
-        &__tarifa-principal{
-            align-items: flex-start;
-        }
+      &__tarifa-principal{
+        align-items: flex-start;
+      }
 
-        &__tarifa-paragraph{
-            font-family: $roboto;
-            font-weight: bold;
+      &__tarifa-paragraph{
+        font-family: $roboto;
+        font-weight: bold;
             
             
-            &--one{
-              font-size: 50px;
-              margin-bottom: 12px;
-            }
-        
-            &--two{
-              font-size: 30px;
-              margin-bottom: 40px;
-            }
-        
-            &--three{
-              font-size: 30px;
-              margin-bottom: 94px;
-            }
+        &--one{
+          font-size: 50px;
+          margin-bottom: 12px;
         }
+        
+        &--two{
+          font-size: 30px;
+          margin-bottom: 40px;
+        }
+        
+        &--three{
+          font-size: 30px;
+          margin-bottom: 94px;
+        }
+      }
 
-        &__contact-contrata{
-            font-size: 16px;
-            padding: 28px 90px;
+      &__contact-contrata{
+        font-size: 16px;
+        padding: 28px 90px;
             
-        }
+      }
 
-        &__contact-container{
-         width: 100%;
-        }
+      &__contact-container{
+        width: 100%;
+      }
 
-        &__contact-number{
-            font-size: 14px;
-        }
+      &__contact-number{
+        font-size: 14px;
+      }
 
-        &__modal-label{
-          font-size: 10px;
-        }
+      &__modal-label{
+        font-size: 10px;
+      }
 
-        &__packages{
-            background-image: url('../assets/images/contrata/nordwood-themes-bJjsKbToY34-unsplash-1@2x.png');
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            align-items: center;
-            margin-top: 68px;
-            &--img2{
-                background-image: url('/assets/images/contrata/nordwood-themes-bJjsKbToY34-unsplash@2x.png');
-                margin-top: 42px;
-            }
+      &__packages{
+        background-image: url('../assets/images/contrata/nordwood-themes-bJjsKbToY34-unsplash-1@2x.png');
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 68px;
+        &--img2{
+          background-image: url('/assets/images/contrata/nordwood-themes-bJjsKbToY34-unsplash@2x.png');
+          margin-top: 42px;
         }
+      }
 
-        //tarifas
+      //tarifas
 
-        &__tarifas{
-         margin-top: 68px;
-        }
+      &__tarifas{
+        margin-top: 68px;
+      }
 
-        &__tarifas-container{
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            padding: 12px 24px;
-            box-shadow: 0px 0px 12px #00000029;
-            margin: 30px 0;
-            width: 80%;
-        }
+      &__tarifas-container{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 24px;
+        box-shadow: 0px 0px 12px #00000029;
+        margin: 30px 0;
+        width: 85%;
+      }
 
-        &__producto{
-         width: 42%;
-        }
+      &__tarifas-container-article{
+        //width: 80%;
+      }
+
+      &__producto{
+        width: 100%;
+      }
         
-        &__tarifas-img{
-            width: 30%;
-            margin: 0;
-        }
+      &__tarifas-img{
+        width: 20%;
+        margin: 0;
+      }
         
-        &__tarifas-paragraph{
-            font-size: 18px;
-            width: 100%;
-            
+      &__tarifas-paragraph{
+        font-size: 18px;
+        width: 100%;   
+      }
+
+      //DROPDOWN:
+
+      &__tarifas-dropdown-body{
+        border: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      &__tarifas-dropdown-p{
+        font-size: 18px;
+        text-align: left;
+        width: 100%;
+        margin-bottom: 0;
+        & span{
+          font-size: 14px;
         }
+      }
+      &__tarifas-dropdown-container-general{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+    
+      &__tarifas-dropdown-container{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 56px;
+        margin-top: 28px;
+        width: 70%;
+      }
+    
+      &__tarifas-dropdown-img{
+        width: 20%;
+        margin-right: 12px;
+        &--wifi{
+          width: 30%;
+        }
+      }
+
+      // FOOTER:
+
+      &__footer-first-container{
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      
+      &__footer-img-container{
+        margin: 0;
+        justify-content: flex-start;
+      }
+      
+      &__footer-img{
+        width: 95%;
+        margin: 0;
+      }
+      
+      &__footer-terms-container{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 25%;
+        margin-left: 32px;
+      }
+      
+      &__footer-enlaces{
+        color: #858585;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 10px;
+        text-decoration: underline;
+        margin-bottom: 8px;
+      }
+      
+      &__footer-contact{
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 12px 24px;
+      }
+      
+      &__footer-contact-p{
+        text-align: left;
+        width: 22%;
+      }
+        
+      &__footer-contact-solicitud{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 60%;
+      }
+      
+      &__footer-contact-input-text{
+        font-size: 14px;
+        width: 30%;
+        margin-bottom: 0;
+      }
+      
+      &__footer-contact-terms{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      &__footer-contact-input-checkbox{
+        transform: scale(0.7);
+      }
+      
+      &__footer-contact-input-label{
+        font-size: 10px;
+        font-family: $roboto;
+        margin-left: 4px;
+        margin-bottom: 0;
+      }
         
     }
 
