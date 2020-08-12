@@ -1,5 +1,6 @@
 .p-atc{
-
+    
+    //SECCION BANNER:
     &__banner{
       background-image: url('../assets/images/atc/edu-lauton-TyQ-0lPp6e4-unsplash.png');
       background-position: right;
@@ -13,30 +14,36 @@
       color: $colorWhite;
       font-family: $roboto;
     }
-
+    
+    //TITULO DEL BANNER:
     &__banner-title{
         font-size: 40px;
         line-height: 56px;
         font-weight: bold;
         margin: 0;
     }
-      &__banner-subtitle{
+
+    // SUBITITULO DEL BANNER:
+    &__banner-subtitle{
         font-size: 40px;
         line-height: 56px;
         font-weight: 100;
         font-style: italic;
         margin: 0 0 42px 0;
-      }
+    }
     
+    //SECCION DE SUPPORT AL USUARIO:
     &__support{
       font-family: $roboto;
       margin-bottom: 42px;
     }
 
+    //CONTENEDOR DEL PARRAFO DE SUPPORT:
     &__support-paragraph-container{
         margin: 42px 15px 60px 15px;
     }
-      
+     
+    //PARRAFO DE LA SECCION DE SUPPORT:
     &__support-paragraph{
         font-size: 20px;
         line-height: 22px;
@@ -48,25 +55,27 @@
         }
     }
 
-    
+    //LISTA DE LINKS:
     &__support-links-list{
-          list-style: none;
-          width: fit-content;
-          text-align: center;
-          padding: 0;
-          margin: auto;
+        list-style: none;
+        width: fit-content;
+        text-align: center;
+        padding: 0;
+        margin: auto;
     }
 
+    //ITEMS DE LA LISTA:
     &__support-links-item{
-          margin-bottom: 20px;
+        margin-bottom: 20px;
     }
 
+    //CONTENIDO DEL ITEM DE LA LISTA:
     &__support-links-item-p{
         margin: 0;
         margin-top: 20px;
     }
       
-    
+    //SECCION DE CONTACTO:
     &__contact{
       height: 76px;
       background-color: $colorBlue;
@@ -82,27 +91,31 @@
       }
     }
     
+    //EJEMPLO DE EMAIL:
     &__contact-contact-mail{
         margin: 0 0 0 16px;
         font-size: 18px;
         font-weight: 100;
     }
 
+    //ICONO DE MOBIL:
     &__contact-contact-icon-phone{
         font-size: 32px;
     }
 
+    //EJEMPLO DE NUMERO DE MOBIL:
     &__contact-contact-phone{
         margin: 0 0 0 16px;
         font-size: 18px;
         font-weight: 100;
     }
   
-    
+    //SECCION DE AYUDA AL USUARIO:
     &__help{
       text-align: center;
     }
   
+    //PARRAFO DE AYUDA:
     &__help-paragraph{
         margin: 0 15px 60px 15px;
         font-size: 20px;
@@ -117,32 +130,37 @@
     
 
     @media (min-width:$md){
+        //SECCION BANNER:
         &__banner{
           background-image: url('../assets/images/atc/edu-lauton-TyQ-0lPp6e4-unsplash@2x.png');
           height:calc(100vh - 97px);
         }
 
+        //TITULO DEL BANNER:
         &__banner-title{
             font-size: 80px;
             line-height: 96px;
         }
 
+        // SUBITITULO DEL BANNER:
         &__banner-subtitle{
             font-size: 80px;
             line-height: 96px;
         }
         
-        
+        //CONTENEDOR DEL PARRAFO DE SUPPORT:
         &__support-paragraph-container{
             max-width: 908px;
             margin: 42px auto 60px auto;
         }
 
+        //PARRAFO DE LA SECCION DE SUPPORT:
         &__support-paragraph{
             font-size: 22px;
             line-height: 28px;
         }
         
+        //LISTA DE LINKS:
         &__support-links-list{
             display: flex;
             align-items: flex-end;
@@ -150,16 +168,18 @@
             justify-content: center;
         }
 
+        //ITEMS DE LA LISTA:
         &__support-links-item{
             margin-left: 62px;
             margin-bottom: 0;
         }
 
+        //PRIMER ITEM DE LA LISTA:
         &__support-links-item:first-of-type{
             margin-left: 0;
         }
         
-        
+        //SECCION DE CONTACTO:
         &__contact{
           height: 76px;
           flex-direction: row;
@@ -167,15 +187,17 @@
           align-items: center;
         }
 
+        //EJEMPLO DE EMAIL:
         &__contact-contact-mail{
             margin: 0 125px 0 46px;
         }
     
+        //EJEMPLO DE NUMERO DE MOBIL:
         &__contact-contact-phone{
             margin: 0 0 0 16px;
         }
         
-        
+        //PARRAFO DE AYUDA:
         &__help-paragraph{
             margin: 0 auto 60px auto;
             font-size: 22px;

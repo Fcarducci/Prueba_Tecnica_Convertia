@@ -1,4 +1,6 @@
 .p-contrata{
+
+  //SECCION PRINCIPAL DE LA PAGINA CONTRATA:
   &__jumbotron{
     background-image: url('../assets/images/contrata/drew-graham-PVyhz0wmHdo-unsplash.png');
     background-position: top;
@@ -10,6 +12,7 @@
     align-items: center;
   }
 
+  //CONTENEDOR TARIFA PRINCIPAL:
   &__tarifa-principal{
     display: flex;
     flex-direction: column;
@@ -19,11 +22,13 @@
     text-align: left;
   }
 
+  //PARRAFO DE LA TARIFA PRINCIPAL:
   &__tarifa-paragraph{
     font-family: $roboto;
     font-weight: bold;
     margin-bottom: 8px;
     
+    // MODIFICADORES DE LOS PARRAFOS:
     &--one{
       font-size: 25px;
     }
@@ -37,6 +42,7 @@
     }
   }
 
+  //CONTENEDOR PARA EL CONTACTO CON EL USUARIO:
   &__contact{
     margin-top: 32px;
     display: flex;
@@ -47,6 +53,7 @@
 
   }
 
+  //TITULO DEL CONTENEDOR  PARA CONTACTAR CON EL USUARIO:
   &__contact-contrata{
     background-color: $colorBlue;
     border-radius: 23px 23px 0px 3px;
@@ -59,6 +66,7 @@
     margin-bottom: 0;
   }
 
+  //CONTENEDOR DE LOS DATOS A RELLENAR POR EL USUARIO:
   &__contact-container{
     background-color: $colorWhite;
     display: flex;
@@ -70,6 +78,7 @@
     border-radius: 3px 0px 23px 23px;
   }
 
+  //PARRAFO DEJANOS TU NUMERO:
   &__contact-number{
     color: $colorBlue;
     font-size: 12px;
@@ -78,7 +87,8 @@
     text-align: center;
     width: 80%;
   }
-
+  
+  //PARRAFO DE ESPECIFICACION:
   &__contact-specification{
       color: #000000;
       font-family: Arial, Helvetica, sans-serif;
@@ -86,18 +96,21 @@
       text-align: center;
   }
 
+  //INPUT TIPO TEXTO PARA EL NUMERO DEL USUARIO:
   &__input-text{
       width: 80%;
       margin-bottom: 12px;
       font-size: 12px;
   }
 
+  //CONTENEDOR DE LOS TERMINOS Y CONDICIONES:
   &__modal-terms{
     width: 80%;
     display: flex;
     align-items: center;
   }
 
+  //ETIQUETA LABEL PARA LOS TERMINOS Y CONDICIONES:
   &__modal-label{
     color: #BFB8AE;
     font-family: Arial, Helvetica, sans-serif;
@@ -105,6 +118,7 @@
     margin-left: 6px;
   }
 
+  //CONTENEDOR DE LOS TIPOS DE PAQUETES:
   &__packages{
     background-image: url('../assets/images/contrata/nordwood-themes-bJjsKbToY34-unsplash-1.png');
     background-position: top;
@@ -119,10 +133,12 @@
     }
   }
 
+  //BOTONES DE PAQUETES:
   &__packages-button{
     margin-bottom: 20px;
   }
 
+  //SECCION DE TARIFAS:
   &__tarifas{
     display: flex;
     flex-direction: column;
@@ -130,6 +146,7 @@
     align-items: center;
   }
 
+  //CONTENEDOR DE LAS TARIFAS:
   &__tarifas-container{
     display: flex;
     flex-direction: column;
@@ -141,6 +158,7 @@
     position: relative;
   }
 
+  //CONTENEDOR DE LOS PRODUCTOS:
   &__producto{
     display: flex;
     //flex-direction: column;
@@ -151,11 +169,13 @@
     }
   }
 
+  // IMAGEN DEL PRODUCTO:
   &__tarifas-img{
       width: 20%;
       margin: 0 12px;
   }
-
+  
+  // DESCRIPCION DEL PRODUCTO:
   &__tarifas-paragraph{
     font-family: $roboto;
     font-size: 10px;
@@ -169,6 +189,7 @@
     }
   }
 
+  //CUERPO DEL DROPDOWN DE BOOTSTRAP:
   &__tarifas-dropdown-body{
     border: none;
     display: flex;
@@ -177,6 +198,7 @@
     align-items: center;
   }
 
+  // ESPECIFICACION DE LA TARIFA EN EL DROPDOWN:
   &__tarifas-dropdown-p{
     font-family: $roboto;
     font-weight: bold;
@@ -189,7 +211,8 @@
       display:block
     }
   }
-
+  
+  //CONTENEDOR DROPDOWN PARA MAS INFORMACION DEL PRODUCTO:
   &__tarifas-dropdown-container{
     display: flex;
     flex-direction: column;
@@ -197,6 +220,7 @@
     align-items: center;
   }
 
+  // IMAGEN DE LA TARIFA EN EL DROPDOWN:
   &__tarifas-dropdown-img{
     width: 20%;
     &--wifi{
@@ -204,6 +228,7 @@
     }
   }
 
+  // PRIMER CONTENEDOR DEL FOOTER:
   &__footer-first-container{
     background-color: #DCDCDC;
     display: flex;
@@ -212,17 +237,20 @@
     align-items: center;
   }
 
+  //CONTENEDOR PARA LA IMAGEN DEL FOOTER:
   &__footer-img-container{
     margin: 12px 0;
     display: flex;
     justify-content: center;
   }
 
+  //IMAGEN DEL FOOTER:
   &__footer-img{
     width: 50%;
     margin: auto;
   }
 
+  //CONTENEDOR DE TERMINOS Y CONDICIONES DEL FOOTER:
   &__footer-terms-container{
     display: flex;
     flex-direction: column;
@@ -230,6 +258,7 @@
     align-items: center;
   }
 
+  // ENLACES DEL FOOTER:
   &__footer-enlaces{
     color: #858585;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -238,6 +267,7 @@
     margin-bottom: 8px;
   }
 
+  //CONTENEDOR PARA EL CONTACTO CON EL USUARIO DEL FOOTER:
   &__footer-contact{
     display: flex;
     flex-direction: column;
@@ -246,6 +276,7 @@
     margin-top: 12px;
   }
 
+  //MENSAJE AL USUARIO EN EL FOOTER:
   &__footer-contact-p{
     font-size: 12px;
     font-family: $roboto;
@@ -258,6 +289,7 @@
     }
   }
   
+  //CONTENEDOR PARA LOS DATOS DEL USUARIO EN EL FOOTER:
   &__footer-contact-solicitud{
     display: flex;
     flex-direction: column;
@@ -265,6 +297,7 @@
     align-items: center;
   }
 
+  //INPUT TIPO TEXTO DEL FOOTER:
   &__footer-contact-input-text{
     font-size: 12px;
     width: 60%;
@@ -274,16 +307,19 @@
     padding: 6px 8px;
   }
 
+  //CONTENEDOR PARA LOS TERMINOS Y CONDICIONES DEL FOOTER:
   &__footer-contact-terms{
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
+  //INPUT TIPO CHECKBOX DEL FOOTER:
   &__footer-contact-input-checkbox{
     transform: scale(0.7);
   }
 
+  //ETIQUETA LABEL DEL FOOTER:
   &__footer-contact-input-label{
     font-size: 10px;
     font-family: $roboto;
@@ -294,6 +330,8 @@
     // MEDIA QUERYS PARA DISENO CON PANTALLAS CON UN MINIMO DE 768PX DE ANCHO (ORDENADORES):
 
     @media (min-width:$md){
+
+      //SECCION PRINCIPAL DE LA PAGINA CONTRATA:
       &__jumbotron{
         background-image: url('../assets/images/contrata/drew-graham-PVyhz0wmHdo-unsplash@2x.png');
         flex-direction: row;
@@ -301,15 +339,17 @@
         height:calc(100vh - 105px);
       }
 
+      //CONTENEDOR TARIFA PRINCIPAL:
       &__tarifa-principal{
         align-items: flex-start;
       }
 
+      //PARRAFO DE LA TARIFA PRINCIPAL:
       &__tarifa-paragraph{
         font-family: $roboto;
         font-weight: bold;
             
-            
+        //MODIFIADORES DE LOS PARRAFOS:   
         &--one{
           font-size: 50px;
           margin-bottom: 12px;
@@ -326,25 +366,30 @@
         }
       }
 
+      //TITULO DEL CONTENEDOR  PARA CONTACTAR CON EL USUARIO:
       &__contact-contrata{
         font-size: 16px;
         padding: 28px 90px;
             
       }
-
+  
+      //CONTENEDOR DE LOS DATOS A RELLENAR POR EL USUARIO:
       &__contact-container{
         width: 100%;
       }
-
+  
+      //PARRAFO DEJANOS TU NUMERO:
       &__contact-number{
         font-size: 14px;
       }
 
+      //ETIQUETA LABEL PARA LOS TERMINOS Y CONDICIONES:
       &__modal-label{
         font-size: 10px;
         margin-bottom: 0;
       }
 
+      //CONTENEDOR DE LOS TIPOS DE PAQUETES:
       &__packages{
         background-image: url('../assets/images/contrata/nordwood-themes-bJjsKbToY34-unsplash-1@2x.png');
         display: flex;
@@ -358,12 +403,12 @@
         }
       }
 
-      //tarifas
-
+      //SECCION DE TARIFAS:
       &__tarifas{
         margin-top: 68px;
       }
 
+      //CONTENEDOR DE LAS TARIFAS:
       &__tarifas-container{
         flex-direction: row;
         justify-content: space-between;
@@ -383,6 +428,7 @@
         }
       }
 
+      //CONTENEDOR DE LOS PRODUCTOS:
       &__producto{
         justify-content: flex-start;
         
@@ -390,7 +436,8 @@
           margin-left: 12px;
         }
       }
-        
+
+      // IMAGEN DEL PRODUCTO:
       &__tarifas-img{
         width: 20%;
         margin: 0;
@@ -399,7 +446,8 @@
           margin: 0 28px;
         }
       }
-        
+
+      // DESCRIPCION DEL PRODUCTO:
       &__tarifas-paragraph{
         font-size: 18px;
         width: 100%;
@@ -410,8 +458,7 @@
         }
       }
 
-      //DROPDOWN:
-
+      //CUERPO DEL DROPDOWN DE BOOTSTRAP
       &__tarifas-dropdown-body{
         border: none;
         display: flex;
@@ -420,6 +467,7 @@
         align-items: center;
       }
     
+      // ESPECIFICACION DE LA TARIFA EN EL DROPDOWN:
       &__tarifas-dropdown-p{
         font-size: 18px;
         text-align: left;
@@ -435,7 +483,8 @@
         justify-content: space-between;
         align-items: center;
       }
-    
+
+      //CONTENEDOR DROPDOWN PARA MAS INFORMACION DEL PRODUCTO:
       &__tarifas-dropdown-container{
         flex-direction: row;
         justify-content: space-between;
@@ -445,6 +494,7 @@
         width: 70%;
       }
     
+      // IMAGEN DE LA TARIFA EN EL DROPDOWN:
       &__tarifas-dropdown-img{
         width: 20%;
         margin-right: 12px;
@@ -453,23 +503,25 @@
         }
       }
 
-      // FOOTER:
-
+      // PRIMER CONTENEDOR DEL FOOTER:
       &__footer-first-container{
         flex-direction: row;
         justify-content: space-around;
       }
-      
+        
+      //CONTENEDOR PARA LA IMAGEN DEL FOOTER:
       &__footer-img-container{
         margin: 0;
         justify-content: flex-start;
       }
-      
+
+      //IMAGEN DEL FOOTER:
       &__footer-img{
         width: 95%;
         margin: 0;
       }
-      
+
+      //CONTENEDOR DE TERMINOS Y CONDICIONES DEL FOOTER:
       &__footer-terms-container{
         flex-direction: row;
         justify-content: space-between;
@@ -477,7 +529,8 @@
         width: 25%;
         margin-left: 32px;
       }
-      
+
+      // ENLACES DEL FOOTER:
       &__footer-enlaces{
         color: #858585;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -485,40 +538,47 @@
         text-decoration: underline;
         margin-bottom: 8px;
       }
-      
+
+      //CONTENEDOR PARA EL CONTACTO CON EL USUARIO DEL FOOTER:
       &__footer-contact{
         flex-direction: row;
         justify-content: space-around;
         padding: 12px 24px;
       }
       
+      //MENSAJE AL USUARIO EN EL FOOTER:
       &__footer-contact-p{
         text-align: left;
         width: 22%;
       }
-        
+
+      //CONTENEDOR PARA LOS DATOS DEL USUARIO EN EL FOOTER:
       &__footer-contact-solicitud{
         flex-direction: row;
         justify-content: space-between;
         width: 60%;
       }
-      
+
+      //INPUT TIPO TEXTO DEL FOOTER:
       &__footer-contact-input-text{
         font-size: 14px;
         width: 30%;
         margin-bottom: 0;
       }
-      
+
+      //CONTENEDOR PARA LOS TERMINOS Y CONDICIONES DEL FOOTER:
       &__footer-contact-terms{
         display: flex;
         justify-content: center;
         align-items: center;
       }
-      
+
+      //INPUT TIPO CHECKBOX DEL FOOTER:
       &__footer-contact-input-checkbox{
         transform: scale(0.7);
       }
       
+      //ETIQUETA LABEL DEL FOOTER:
       &__footer-contact-input-label{
         font-size: 10px;
         font-family: $roboto;

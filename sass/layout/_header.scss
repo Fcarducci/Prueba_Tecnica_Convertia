@@ -1,10 +1,15 @@
+//CABECERA PARA LA HOMEPAGE:
 .p-home{
+
+    //CONTENEDOR DEL HEADER:
     &__header{
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 16px;
     }
+
+    //ICONO DEL HEADER:
     &__icon{
         color: $colorBlue;
         cursor: pointer;
@@ -13,22 +18,29 @@
             transform: scale3d(1.175,1.1,1.1);
         }
     }
+
+    //IMAGEN LOGOTIPO:
     &__logotipo{
       width: 86px;
     }
 
+    // MEDIA QUERYS PARA DISENO CON PANTALLAS CON UN MINIMO DE 768PX DE ANCHO (ORDENADORES):
+
     @media (min-width:$md){
+        //CONTENEDOR DEL HEADER:
         &__header{
             justify-content: center;
             position: relative;
             padding: 12px;
         }
 
+        //IMAGEN LOGOTIPO:
         &__logotipo{
             height: 73px;
             width: auto;
         }
 
+        //ICONO DEL HEADER:
         &__icon{
             position: absolute;
             top: 50%;
@@ -39,22 +51,27 @@
     }
 }
 
+//CABECERA PARA LA PAGINA DE CONTRATA-ATC:
 .p-contrata{
-    
+
+    //CONTENEDOR DEL HEADER:
     &__header{
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 16px;
     }
-
+    
+    //IMAGEN DE UBICACION
     &__ubicacion{
         width: 4%;
     }
 
 
+    // MEDIA QUERYS PARA DISENO CON PANTALLAS CON UN MINIMO DE 768PX DE ANCHO (ORDENADORES):
 
     @media (min-width:$md){
+        //CONTENEDOR DEL HEADER:
         &__header{
             display: flex;
             justify-content: center;
@@ -62,6 +79,7 @@
             padding: 16px;
         }
 
+        //IMAGEN DE UBICACION
         &__ubicacion{
             position: absolute;
             top: 50%;

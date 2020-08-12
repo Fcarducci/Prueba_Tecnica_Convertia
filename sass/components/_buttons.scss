@@ -1,4 +1,8 @@
+
+//BOTONES HOMEPAGE:
 .p-home{
+
+    //BOTON PARA LA SECCION DE CONTRATA:  
     &__button-contrata{
       background-color: $colorBlue;
       border: 2px solid $colorWhite;
@@ -14,6 +18,7 @@
       display: block;
     }
 
+    //BOTON PARA LA SECCION DE CLIENTE:
     &__button-cliente{
       background-color: $colorWhite;
       border: 2px solid $colorOrange;
@@ -29,6 +34,7 @@
       display: block;
     }
 
+    //BOTON PARA EL MODAL 'LLAMAME':
     &__modal-callme{
       background-color: $colorOrange;
       border: none;
@@ -42,7 +48,10 @@
       width: 160px;
     }
 
+    // MEDIA QUERYS PARA DISENO CON PANTALLAS CON UN MINIMO DE 768PX DE ANCHO (ORDENADORES):
     @media (min-width:$md){
+
+      //BOTON PARA LA SECCION DE CONTRATA:  
       &__button-contrata{
         border: 3px solid $colorWhite;
         border-radius: 4px;    
@@ -58,6 +67,7 @@
         }
       }
 
+        //BOTON PARA LA SECCION DE CLIENTE:  
         &__button-cliente{
           border: 4px solid $colorOrange;
           border-radius: 4px;
@@ -75,6 +85,7 @@
           }
         }
 
+        //BOTON PARA EL MODAL 'LLAMAME':
         &__modal-callme{
           margin: 28px auto auto auto;
           padding-top: 10px;
@@ -85,8 +96,10 @@
     }
 }
 
+//BOTONES PARA LA PAGINA DE CONTRATA:
 .p-contrata{
 
+  //BOTON CONTRATA:
   &__button-contrata{
     background-color: $colorBlue;
     color:$colorWhite;
@@ -97,6 +110,7 @@
     border: none;
   }
 
+  //BOTON DE LLAMAME:
   &__callme{
    background-color: $colorOrange;
    font-family: $roboto;
@@ -110,11 +124,13 @@
    margin-top: 12px;
   }
 
+  //CONTENEDOR DE LOS BOTONES DE TARIFA:
   &__button-container-tarifa{
     margin-bottom: 12px;
     margin-top: 12px;
   }
 
+  //BOTON PARA DESPLEGAR EL DROPDOWN:
   &__tarifas-dropdown{
     width: 25px;
     height: 25px;
@@ -145,6 +161,7 @@
     }
   }
 
+  // MEDIA QUERYS PARA DISENO CON PANTALLAS CON UN MINIMO DE 768PX DE ANCHO (ORDENADORES):
   @media (min-width:$md){
     &__button-contrata{
       background-color: $colorBlue;
@@ -160,11 +177,14 @@
       }
     }
 
+    //BOTON DE LLAMAME:
     &__callme{
       font-size: 16px;
       border: 3px solid $colorWhite;
       padding-top: 12px;
       padding-bottom: 12px;
+
+      //MODIFICADOR PARA EL MISMO BOTON EN EL FOOTER:
       &--footer{
         width: 198px;
         padding: 12px 4px;
@@ -174,6 +194,7 @@
       }
     }
 
+    //CONTENEDOR DE LOS BOTONES DE TARIFA:
     &__button-container-tarifa{
       margin-top: 0;
       margin-bottom: 0;
@@ -184,7 +205,10 @@
   }
 }
 
+//BOTONES PARA LA PAGINA DE ATENCION AL CLIENTE:
 .p-atc{
+
+  //BOTON DEL BANNER:
   &__banner-button{
     background-color: $colorBlue;
     border: 2px solid $colorWhite;
@@ -197,6 +221,8 @@
     line-height: 16px;
     padding: 10px 32px;
   }
+
+  //BOTON DE AYUDA:
   &__help-button{
     background-color: $colorWhite;
     border: 2px solid $colorOrange;
@@ -208,9 +234,13 @@
     font-size: 14px;
     line-height: 16px;
     padding: 10px 32px;
+    margin-bottom: 24px;
   }
 
+  // MEDIA QUERYS PARA DISENO CON PANTALLAS CON UN MINIMO DE 768PX DE ANCHO (ORDENADORES):
   @media (min-width:$md){
+
+    //BOTON DEL BANNER:
     &__banner-button{
       border: 3px solid $colorWhite;
       border-radius: 4px;
@@ -223,6 +253,7 @@
         border: 3px solid $colorBlue
       }
     }
+    //BOTON DE AYUDA:
     &__help-button{
       border: 3px solid $colorOrange;
       border-radius: 4px;
