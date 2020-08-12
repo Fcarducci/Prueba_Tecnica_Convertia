@@ -342,6 +342,7 @@
 
       &__modal-label{
         font-size: 10px;
+        margin-bottom: 0;
       }
 
       &__packages{
@@ -352,7 +353,7 @@
         align-items: center;
         margin-top: 68px;
         &--img2{
-          background-image: url('/assets/images/contrata/nordwood-themes-bJjsKbToY34-unsplash@2x.png');
+          background-image: url('../assets/images/contrata/nordwood-themes-bJjsKbToY34-unsplash@2x.png');
           margin-top: 42px;
         }
       }
@@ -372,7 +373,7 @@
         margin: 30px 0;
         width: 85%;
         &--vip{
-          padding: 12px 0;
+          padding: 12px 24px;
         }
       }
       

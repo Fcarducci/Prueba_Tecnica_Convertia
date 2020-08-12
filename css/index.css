@@ -597,7 +597,8 @@
   .p-contrata__contact-number {
     font-size: 14px; }
   .p-contrata__modal-label {
-    font-size: 10px; }
+    font-size: 10px;
+    margin-bottom: 0; }
   .p-contrata__packages {
     background-image: url("../assets/images/contrata/nordwood-themes-bJjsKbToY34-unsplash-1@2x.png");
     display: flex;
@@ -606,7 +607,7 @@
     align-items: center;
     margin-top: 68px; }
     .p-contrata__packages--img2 {
-      background-image: url("/assets/images/contrata/nordwood-themes-bJjsKbToY34-unsplash@2x.png");
+      background-image: url("../assets/images/contrata/nordwood-themes-bJjsKbToY34-unsplash@2x.png");
       margin-top: 42px; }
   .p-contrata__tarifas {
     margin-top: 68px; }
@@ -619,7 +620,7 @@
     margin: 30px 0;
     width: 85%; }
     .p-contrata__tarifas-container--vip {
-      padding: 12px 0; }
+      padding: 12px 24px; }
   .p-contrata__tarifas-container-article--vip {
     width: 70%; }
   .p-contrata__producto {
@@ -867,6 +868,9 @@
     border-bottom: none; }
   .p-home__modal-title {
     font-size: 41px; }
+    .p-home__modal-title--contrata {
+      max-width: 276px;
+      text-align: center; }
   .p-home__close {
     position: fixed;
     top: 10%;
@@ -901,7 +905,8 @@
   .p-home__modal-terms {
     width: 320px; }
   .p-home__modal-label {
-    font-size: 12px; } }
+    font-size: 12px;
+    margin-bottom: 0; } }
 
 * button:focus {
   outline: none; }

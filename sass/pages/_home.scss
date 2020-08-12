@@ -261,6 +261,10 @@
     // TITULO DEL MODAL:
     &__modal-title{
       font-size: 41px;
+      &--contrata{
+        max-width: 276px;
+        text-align: center;
+      }
     }
 
     // BOTON PARA CERRAR EL MODAL:
@@ -321,6 +325,7 @@
     // ETIQUETA LABEL DEL MODAL:
     &__modal-label{
       font-size: 12px;
+      margin-bottom: 0;
     }
   }
 }
