@@ -12,28 +12,32 @@
       height:calc(100vh - 68.93px);
       color: $colorWhite;
       font-family: $roboto;
-  
-      &-title{
+    }
+
+    &__banner-title{
         font-size: 40px;
         line-height: 56px;
         font-weight: bold;
         margin: 0;
-      }
-      &-subtitle{
+    }
+      &__banner-subtitle{
         font-size: 40px;
         line-height: 56px;
         font-weight: 100;
         font-style: italic;
         margin: 0 0 42px 0;
       }
-    }
+    
     &__support{
       font-family: $roboto;
       margin-bottom: 42px;
-      &-paragraph-container{
+    }
+
+    &__support-paragraph-container{
         margin: 42px 15px 60px 15px;
-      }
-      &-paragraph{
+    }
+      
+    &__support-paragraph{
         font-size: 20px;
         line-height: 22px;
         text-align: center;
@@ -42,24 +46,27 @@
           font-weight: bold;
           color: $colorBlue;
         }
-      }
-      &-links{
-        &-list{
+    }
+
+    
+    &__support-links-list{
           list-style: none;
           width: fit-content;
           text-align: center;
           padding: 0;
           margin: auto;
-        }
-        &-item{
-          margin-bottom: 20px;
-          &-p{
-            margin: 0;
-            margin-top: 20px;
-          }
-        }
-      }
     }
+
+    &__support-links-item{
+          margin-bottom: 20px;
+    }
+
+    &__support-links-item-p{
+        margin: 0;
+        margin-top: 20px;
+    }
+      
+    
     &__contact{
       height: 76px;
       background-color: $colorBlue;
@@ -73,25 +80,30 @@
         display: flex;
         align-items: center;
       }
-      &-contact-mail{
-        margin: 0 0 0 16px;
-        font-size: 18px;
-        font-weight: 100;
-      }
-      &-contact-icon-phone{
-        font-size: 32px;
-      }
-      &-contact-phone{
-        margin: 0 0 0 16px;
-        font-size: 18px;
-        font-weight: 100;
-      }
-  
     }
+    
+    &__contact-contact-mail{
+        margin: 0 0 0 16px;
+        font-size: 18px;
+        font-weight: 100;
+    }
+
+    &__contact-contact-icon-phone{
+        font-size: 32px;
+    }
+
+    &__contact-contact-phone{
+        margin: 0 0 0 16px;
+        font-size: 18px;
+        font-weight: 100;
+    }
+  
+    
     &__help{
       text-align: center;
+    }
   
-      &-paragraph{
+    &__help-paragraph{
         margin: 0 15px 60px 15px;
         font-size: 20px;
         line-height: 22px;
@@ -101,6 +113,80 @@
           font-weight: bold;
           color: $colorBlue;
         }
-      }
+    }
+    
+
+    @media (min-width:$md){
+        &__banner{
+          background-image: url('../assets/images/atc/edu-lauton-TyQ-0lPp6e4-unsplash@2x.png');
+          height:calc(100vh - 97px);
+        }
+
+        &__banner-title{
+            font-size: 80px;
+            line-height: 96px;
+        }
+
+        &__banner-subtitle{
+            font-size: 80px;
+            line-height: 96px;
+        }
+        
+        
+        &__support-paragraph-container{
+            max-width: 908px;
+            margin: 42px auto 60px auto;
+        }
+
+        &__support-paragraph{
+            font-size: 22px;
+            line-height: 28px;
+        }
+        
+        &__support-links-list{
+            display: flex;
+            align-items: flex-end;
+            width: auto;
+            justify-content: center;
+        }
+
+        &__support-links-item{
+            margin-left: 62px;
+            margin-bottom: 0;
+        }
+
+        &__support-links-item:first-of-type{
+            margin-left: 0;
+        }
+        
+        
+        &__contact{
+          height: 76px;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+        }
+
+        &__contact-contact-mail{
+            margin: 0 125px 0 46px;
+        }
+    
+        &__contact-contact-phone{
+            margin: 0 0 0 16px;
+        }
+        
+        
+        &__help-paragraph{
+            margin: 0 auto 60px auto;
+            font-size: 22px;
+            line-height: 28px;
+            max-width: 714px;
+            .span-blue{
+              font-weight: bold;
+              color: $colorBlue;
+            }
+        }
+        
+    
     }
 }

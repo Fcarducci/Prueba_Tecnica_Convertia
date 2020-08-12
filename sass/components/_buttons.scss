@@ -160,4 +160,32 @@
     line-height: 16px;
     padding: 10px 32px;
   }
+
+  @media (min-width:$md){
+    &__banner-button{
+      border: 3px solid $colorWhite;
+      border-radius: 4px;
+      font-size: 18px;
+      line-height: 20px;
+      padding: 20px 62px;
+      &:hover{
+        background-color: $colorWhite;
+        color: $colorBlue;
+        border: 3px solid $colorBlue
+      }
+    }
+    &__help-button{
+      border: 3px solid $colorOrange;
+      border-radius: 4px;
+      font-size: 18px;
+      line-height: 20px;
+      padding: 20px 62px;
+      margin:0 auto;
+      &:hover{
+        background-color: $colorOrange;
+        color: $colorWhite;
+        border: 3px solid black;
+      }
+    }
+  }
 }
