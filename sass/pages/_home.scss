@@ -46,19 +46,19 @@
     // MODIFICADOR DEL PRIMER PARRAFO
     &--one{
       font-weight: bold;
-      width: 180px;
+      width: 200px;
     }
 
     // MODIFICADOR DEL SEGUNDO PARRAFO
     &--two{
       font-weight: bold;
-      width: 204px;
+      width: 250px;
     }
 
     // MODIFICADOR DEL TERCER PARRAFO
     &--three{
       font-weight: bold;
-      width: 142px;
+      width: 180px;
     }
   }
 
@@ -197,14 +197,15 @@
     &__paragraph{
         font-size: 60px;
         margin-bottom: 6px;
+        padding: 0 24px 0 18px;
         &--one{
-            width: 450px;
+            width: max-content;
         }
         &--two{
-            width: 510px;
+          width: max-content;
         }
         &--three{
-            width: 358px;
+          width: max-content;
         }
     }
     
