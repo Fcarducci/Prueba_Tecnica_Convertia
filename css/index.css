@@ -444,6 +444,65 @@
   text-align: center; }
   .p-contrata__tarifas-paragraph--vip {
     margin-left: 0; }
+.p-contrata__footer-first-container {
+  background-color: #DCDCDC;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+.p-contrata__footer-img-container {
+  margin: 12px 0;
+  display: flex;
+  justify-content: center; }
+.p-contrata__footer-img {
+  width: 50%;
+  margin: auto; }
+.p-contrata__footer-terms-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+.p-contrata__footer-enlaces {
+  color: #858585;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 10px;
+  text-decoration: underline;
+  margin-bottom: 8px; }
+.p-contrata__footer-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px; }
+.p-contrata__footer-contact-p {
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding: 12px 24px;
+  margin-bottom: 0; }
+  .p-contrata__footer-contact-p span {
+    color: #0063BC; }
+.p-contrata__footer-contact-solicitud {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+.p-contrata__footer-contact-input-text {
+  font-size: 12px;
+  width: 60%;
+  margin-bottom: 12px; }
+.p-contrata__footer-contact-terms {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+.p-contrata__footer-contact-input-checkbox {
+  transform: scale(0.7); }
+.p-contrata__footer-contact-input-label {
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+  margin-left: 4px;
+  margin-bottom: 0; }
 @media (min-width: 768px) {
   .p-contrata__jumbotron {
     background-image: url("../assets/images/contrata/drew-graham-PVyhz0wmHdo-unsplash@2x.png");

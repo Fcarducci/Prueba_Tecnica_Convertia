@@ -167,6 +167,90 @@
     }
   }
 
+  &__footer-first-container{
+    background-color: #DCDCDC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__footer-img-container{
+    margin: 12px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__footer-img{
+    width: 50%;
+    margin: auto;
+  }
+
+  &__footer-terms-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__footer-enlaces{
+    color: #858585;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    text-decoration: underline;
+    margin-bottom: 8px;
+  }
+
+  &__footer-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+  }
+
+  &__footer-contact-p{
+    font-size: 12px;
+    font-family: $roboto;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px 24px;
+    margin-bottom: 0;
+    & span{
+      color: $colorBlue;
+    }
+  }
+  
+  &__footer-contact-solicitud{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__footer-contact-input-text{
+    font-size: 12px;
+    width: 60%;
+    margin-bottom: 12px;
+  }
+
+  &__footer-contact-terms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__footer-contact-input-checkbox{
+    transform: scale(0.7);
+  }
+
+  &__footer-contact-input-label{
+    font-size: 10px;
+    font-family: $roboto;
+    margin-left: 4px;
+    margin-bottom: 0;
+  }
+
     // MEDIA QUERYS PARA DISENO CON PANTALLAS CON UN MINIMO DE 768PX DE ANCHO (ORDENADORES):
 
     @media (min-width:$md){
