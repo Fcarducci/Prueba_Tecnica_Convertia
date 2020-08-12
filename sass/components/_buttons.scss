@@ -134,3 +134,30 @@
     }
   }
 }
+
+.p-atc{
+  &__banner-button{
+    background-color: $colorBlue;
+    border: 2px solid $colorWhite;
+    border-radius: 2px;
+    color: $colorWhite;
+    font-family: $roboto;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 10px 32px;
+  }
+  &__help-button{
+    background-color: $colorWhite;
+    border: 2px solid $colorOrange;
+    border-radius: 2px;
+    color: $colorOrange;
+    font-family: $roboto;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 10px 32px;
+  }
+}

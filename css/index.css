@@ -105,6 +105,29 @@
   .p-contrata__button-container-tarifa {
     margin-top: 0; } }
 
+.p-atc__banner-button {
+  background-color: #0063BC;
+  border: 2px solid #FFFFFF;
+  border-radius: 2px;
+  color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 10px 32px; }
+.p-atc__help-button {
+  background-color: #FFFFFF;
+  border: 2px solid #FF6A00;
+  border-radius: 2px;
+  color: #FF6A00;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 10px 32px; }
+
 .p-home__header {
   display: flex;
   justify-content: space-between;
@@ -154,6 +177,86 @@
     font-size: 28px;
     width: 2%;
     cursor: pointer; } }
+
+.p-atc__banner {
+  background-image: url("../assets/images/atc/edu-lauton-TyQ-0lPp6e4-unsplash.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 68.93px);
+  color: #FFFFFF;
+  font-family: "Roboto", sans-serif; }
+  .p-atc__banner-title {
+    font-size: 40px;
+    line-height: 56px;
+    font-weight: bold;
+    margin: 0; }
+  .p-atc__banner-subtitle {
+    font-size: 40px;
+    line-height: 56px;
+    font-weight: 100;
+    font-style: italic;
+    margin: 0 0 42px 0; }
+.p-atc__support {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 42px; }
+  .p-atc__support-paragraph-container {
+    margin: 42px 15px 60px 15px; }
+  .p-atc__support-paragraph {
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    margin: 0; }
+    .p-atc__support-paragraph .span-blue {
+      font-weight: bold;
+      color: #0063BC; }
+  .p-atc__support-links-list {
+    list-style: none;
+    width: fit-content;
+    text-align: center;
+    padding: 0;
+    margin: auto; }
+  .p-atc__support-links-item {
+    margin-bottom: 20px; }
+    .p-atc__support-links-item-p {
+      margin: 0;
+      margin-top: 20px; }
+.p-atc__contact {
+  height: 76px;
+  background-color: #0063BC;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 54px; }
+  .p-atc__contact div {
+    display: flex;
+    align-items: center; }
+  .p-atc__contact-contact-mail {
+    margin: 0 0 0 16px;
+    font-size: 18px;
+    font-weight: 100; }
+  .p-atc__contact-contact-icon-phone {
+    font-size: 32px; }
+  .p-atc__contact-contact-phone {
+    margin: 0 0 0 16px;
+    font-size: 18px;
+    font-weight: 100; }
+.p-atc__help {
+  text-align: center; }
+  .p-atc__help-paragraph {
+    margin: 0 15px 60px 15px;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center; }
+    .p-atc__help-paragraph .span-blue {
+      font-weight: bold;
+      color: #0063BC; }
 
 .p-contrata__jumbotron {
   background-image: url("../assets/images/contrata/drew-graham-PVyhz0wmHdo-unsplash.png");
